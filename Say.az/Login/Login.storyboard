@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iOl-J3-KsF">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rks-GD-hCe">
+            <objects>
+                <viewController id="iOl-J3-KsF" customClass="LoginViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86o-Kj-LCk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RNu-N6-cQj">
+                                <rect key="frame" x="16" y="64" width="343" height="69.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asan login" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxB-ek-1mI">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" name="MainTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-Iz-4gT">
+                                        <rect key="frame" x="0.0" y="36.333333333333329" width="343" height="33.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" name="FadedTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LMQ-Ab-LCp">
+                                <rect key="frame" x="16" y="393.66666666666669" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-aq-eQZ" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                                        <color key="backgroundColor" name="MainButtonColorActive"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="zCo-kv-xGx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Daxil ol">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-eJ-BnL">
+                                        <rect key="frame" x="0.0" y="68" width="343" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="YgM-vt-8XJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Qeydiyyatdan kec">
+                                            <color key="titleColor" name="MainTitleColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-ke-LC4">
+                                <rect key="frame" x="16" y="185.66666666666663" width="343" height="148"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWv-Zp-4mM" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="zV7-zv-Mn6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="phone.icon"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-If-m9N" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88.000000000000028" width="343" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1VS-c5-1Gv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="İstifadəçi ID-si"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="person.icon"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="87T-bn-KjP"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="LMQ-Ab-LCp" firstAttribute="leading" secondItem="87T-bn-KjP" secondAttribute="leading" constant="16" id="0Jw-m8-zIa"/>
+                            <constraint firstItem="87T-bn-KjP" firstAttribute="trailing" secondItem="LMQ-Ab-LCp" secondAttribute="trailing" constant="16" id="OgE-ea-zlt"/>
+                            <constraint firstItem="Ueb-ke-LC4" firstAttribute="leading" secondItem="87T-bn-KjP" secondAttribute="leading" constant="16" id="P6L-dy-WZm"/>
+                            <constraint firstItem="RNu-N6-cQj" firstAttribute="leading" secondItem="87T-bn-KjP" secondAttribute="leading" constant="16" id="WbF-Da-O2h"/>
+                            <constraint firstItem="LMQ-Ab-LCp" firstAttribute="top" secondItem="Ueb-ke-LC4" secondAttribute="bottom" constant="60" id="bWT-Nh-DVD"/>
+                            <constraint firstItem="Ueb-ke-LC4" firstAttribute="top" secondItem="RNu-N6-cQj" secondAttribute="bottom" constant="52" id="eSg-QS-Luo"/>
+                            <constraint firstItem="87T-bn-KjP" firstAttribute="trailing" secondItem="RNu-N6-cQj" secondAttribute="trailing" constant="16" id="sJr-cg-fai"/>
+                            <constraint firstItem="87T-bn-KjP" firstAttribute="trailing" secondItem="Ueb-ke-LC4" secondAttribute="trailing" constant="16" id="wWb-Yd-Gze"/>
+                            <constraint firstItem="RNu-N6-cQj" firstAttribute="top" secondItem="87T-bn-KjP" secondAttribute="top" constant="20" id="zT1-xl-8Eh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OuE-Vg-1vK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.icon" width="16" height="17"/>
+        <image name="phone.icon" width="16" height="16"/>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

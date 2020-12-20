@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="9LC-h8-URg"/>
+                <outlet property="iconImgView" destination="Nfi-kr-skg" id="0Db-Hb-vCV"/>
+                <outlet property="roundedView" destination="Dug-iA-SCa" id="Xjd-go-dOf"/>
+                <outlet property="titleContainer" destination="IV3-P4-Z1A" id="PJz-g8-wsB"/>
+                <outlet property="titleLbl" destination="9rC-fT-CSx" id="fHj-D6-dLx"/>
+                <outlet property="txtField" destination="F2D-MT-R4X" id="jvn-fV-Kws"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-iA-SCa" userLabel="CorneredBGView">
+                    <rect key="frame" x="2" y="4" width="311" height="54"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2D-MT-R4X">
+                            <rect key="frame" x="16" y="4" width="247" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-kr-skg">
+                            <rect key="frame" x="279" y="19" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="8r4-hF-XZy"/>
+                                <constraint firstAttribute="width" constant="16" id="wAB-lg-y6n"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="F2D-MT-R4X" firstAttribute="leading" secondItem="Dug-iA-SCa" secondAttribute="leading" constant="16" id="LPj-4U-kJ8"/>
+                        <constraint firstItem="Nfi-kr-skg" firstAttribute="centerY" secondItem="Dug-iA-SCa" secondAttribute="centerY" id="PEO-Vf-iEt"/>
+                        <constraint firstAttribute="bottom" secondItem="F2D-MT-R4X" secondAttribute="bottom" constant="4" id="TO9-K1-msl"/>
+                        <constraint firstItem="Nfi-kr-skg" firstAttribute="leading" secondItem="F2D-MT-R4X" secondAttribute="trailing" constant="16" id="XHw-Uh-hiK"/>
+                        <constraint firstAttribute="trailing" secondItem="Nfi-kr-skg" secondAttribute="trailing" constant="16" id="gt1-qN-m3I"/>
+                        <constraint firstItem="F2D-MT-R4X" firstAttribute="top" secondItem="Dug-iA-SCa" secondAttribute="top" constant="4" id="h5X-zi-7kv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV3-P4-Z1A">
+                    <rect key="frame" x="18" y="0.0" width="41.5" height="10"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rC-fT-CSx">
+                            <rect key="frame" x="4" y="0.0" width="33.5" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="OFK-Xy-yd4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                            <color key="textColor" name="MainButtonColorActive"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="MainBGColor"/>
+                    <constraints>
+                        <constraint firstItem="9rC-fT-CSx" firstAttribute="leading" secondItem="IV3-P4-Z1A" secondAttribute="leading" constant="4" id="DCP-8I-ynD"/>
+                        <constraint firstAttribute="bottom" secondItem="9rC-fT-CSx" secondAttribute="bottom" id="Hjt-VQ-oEF"/>
+                        <constraint firstAttribute="trailing" secondItem="9rC-fT-CSx" secondAttribute="trailing" constant="4" id="j7A-z2-gzc"/>
+                        <constraint firstItem="9rC-fT-CSx" firstAttribute="top" secondItem="IV3-P4-Z1A" secondAttribute="top" id="xua-dy-8Va"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dug-iA-SCa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="1Gn-Sj-4Rn"/>
+                <constraint firstAttribute="bottom" secondItem="Dug-iA-SCa" secondAttribute="bottom" constant="2" id="AsP-6x-e2P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IV3-P4-Z1A" secondAttribute="trailing" constant="18" id="Mpy-bS-87e"/>
+                <constraint firstItem="IV3-P4-Z1A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Prd-va-l8t"/>
+                <constraint firstAttribute="trailing" secondItem="Dug-iA-SCa" secondAttribute="trailing" constant="2" id="S2S-qU-m5d"/>
+                <constraint firstItem="IV3-P4-Z1A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="VGW-oa-6KO"/>
+                <constraint firstItem="Dug-iA-SCa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="nA2-wh-u8y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-103.2" y="64.767616191904054"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

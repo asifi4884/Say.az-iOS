@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rTs-Ux-Wsu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="haG-KF-eCs">
+            <objects>
+                <viewController id="rTs-Ux-Wsu" customClass="IntroViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywy-s9-Cvz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel.0" translatesAutoresizingMaskIntoConstraints="NO" id="qWh-lf-Z41">
+                                <rect key="frame" x="20" y="127.5" width="335" height="292"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VyB-Jc-45r">
+                                <rect key="frame" x="16" y="479.5" width="343" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni ve sade!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xna-b4-u3V">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" name="MainTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-rN-6Vl">
+                                        <rect key="frame" x="0.0" y="36.5" width="343" height="66.5"/>
+                                        <string key="text">saioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoi</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" name="FadedTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHD-2r-N2r" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="311" y="603" width="48" height="48"/>
+                                <color key="backgroundColor" name="OrangeButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="UnB-QJ-jJd"/>
+                                    <constraint firstAttribute="width" constant="48" id="wiV-hT-zy9"/>
+                                </constraints>
+                                <state key="normal" image="right.arrow"/>
+                                <connections>
+                                    <action selector="nextBtnTapped" destination="rTs-Ux-Wsu" eventType="touchUpInside" id="UmB-LU-MJ5"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-bp-GmB">
+                                <rect key="frame" x="80" y="613.5" width="215" height="27.5"/>
+                                <color key="pageIndicatorTintColor" name="MainTitleColor"/>
+                                <color key="currentPageIndicatorTintColor" name="MainButtonColorActive"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-EB-nRg">
+                                <rect key="frame" x="7" y="603" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="B2E-Xp-wiF"/>
+                                    <constraint firstAttribute="width" constant="48" id="sAx-J4-P71"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Kec">
+                                    <color key="titleColor" name="FadedTitleColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="passBtnTapped" destination="rTs-Ux-Wsu" eventType="touchUpInside" id="TnP-QG-9ZU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ILq-x5-Fuq"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="ILq-x5-Fuq" firstAttribute="bottom" secondItem="sHD-2r-N2r" secondAttribute="bottom" constant="16" id="0cN-cU-My7"/>
+                            <constraint firstItem="qWh-lf-Z41" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ILq-x5-Fuq" secondAttribute="top" constant="60" id="2vD-OI-43D"/>
+                            <constraint firstItem="ILq-x5-Fuq" firstAttribute="trailing" secondItem="VyB-Jc-45r" secondAttribute="trailing" constant="16" id="NHx-45-mep"/>
+                            <constraint firstItem="3MF-EB-nRg" firstAttribute="centerY" secondItem="9Fk-bp-GmB" secondAttribute="centerY" id="TJ5-GB-Au8"/>
+                            <constraint firstItem="9Fk-bp-GmB" firstAttribute="centerY" secondItem="sHD-2r-N2r" secondAttribute="centerY" id="gAL-qB-2pp"/>
+                            <constraint firstItem="9Fk-bp-GmB" firstAttribute="centerX" secondItem="ywy-s9-Cvz" secondAttribute="centerX" id="iQr-25-9kc"/>
+                            <constraint firstItem="qWh-lf-Z41" firstAttribute="centerY" secondItem="ywy-s9-Cvz" secondAttribute="centerY" constant="-60" id="kAi-gt-ABD"/>
+                            <constraint firstItem="qWh-lf-Z41" firstAttribute="leading" secondItem="ILq-x5-Fuq" secondAttribute="leading" constant="20" id="mxw-vR-YM1"/>
+                            <constraint firstItem="VyB-Jc-45r" firstAttribute="top" secondItem="qWh-lf-Z41" secondAttribute="bottom" constant="60" id="uS7-FV-Ud0"/>
+                            <constraint firstItem="sHD-2r-N2r" firstAttribute="leading" secondItem="9Fk-bp-GmB" secondAttribute="trailing" constant="16" id="uol-RG-VZW"/>
+                            <constraint firstItem="9Fk-bp-GmB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VyB-Jc-45r" secondAttribute="bottom" constant="10" id="v07-Z0-eUQ"/>
+                            <constraint firstItem="ILq-x5-Fuq" firstAttribute="trailing" secondItem="sHD-2r-N2r" secondAttribute="trailing" constant="16" id="x3u-uC-1tT"/>
+                            <constraint firstItem="VyB-Jc-45r" firstAttribute="leading" secondItem="ILq-x5-Fuq" secondAttribute="leading" constant="16" id="zCN-E8-WfF"/>
+                            <constraint firstItem="ILq-x5-Fuq" firstAttribute="trailing" secondItem="qWh-lf-Z41" secondAttribute="trailing" constant="20" id="zwj-qg-pel"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nag-K1-LaM"/>
+                    <connections>
+                        <outlet property="backgroundImg" destination="qWh-lf-Z41" id="Asp-4F-qcJ"/>
+                        <outlet property="pageControl" destination="9Fk-bp-GmB" id="OTF-Tx-8LE"/>
+                        <outlet property="subTitleLbl" destination="eH4-rN-6Vl" id="WE6-XS-vnU"/>
+                        <outlet property="titleLbl" destination="xna-b4-u3V" id="ppw-3U-O9W"/>
+                        <segue destination="cr4-W6-bMm" kind="presentation" identifier="to_login_option" modalPresentationStyle="fullScreen" id="ha1-0R-Qcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8G-at-Pt1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.4000000000001" y="92.203898050974516"/>
+        </scene>
+        <!--LoginOption-->
+        <scene sceneID="oDS-ke-kp1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginOption" id="cr4-W6-bMm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hwI-jN-Znu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCE-JJ-Np3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.5999999999999" y="87.256371814092958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carousel.0" width="297" height="292"/>
+        <image name="right.arrow" width="16" height="12"/>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrangeButtonColor">
+            <color red="0.86699998378753662" green="0.49399998784065247" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

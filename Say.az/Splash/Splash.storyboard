@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="We9-By-Dxe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="8n4-8b-85d">
+            <objects>
+                <viewController id="We9-By-Dxe" customClass="SplashViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vku-FZ-IK1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.logo" translatesAutoresizingMaskIntoConstraints="NO" id="suO-3W-xDS">
+                                <rect key="frame" x="50" y="263.5" width="275" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="vfE-x6-drM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5jv-L8-HVK"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="suO-3W-xDS" firstAttribute="centerY" secondItem="Vku-FZ-IK1" secondAttribute="centerY" id="36c-Aw-clp"/>
+                            <constraint firstItem="suO-3W-xDS" firstAttribute="leading" secondItem="5jv-L8-HVK" secondAttribute="leading" constant="50" id="7v1-ax-NW5"/>
+                            <constraint firstItem="5jv-L8-HVK" firstAttribute="trailing" secondItem="suO-3W-xDS" secondAttribute="trailing" constant="50" id="F1d-rW-1t1"/>
+                            <constraint firstItem="suO-3W-xDS" firstAttribute="centerX" secondItem="Vku-FZ-IK1" secondAttribute="centerX" id="Rfb-It-oAG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="lHs-3j-XzZ" kind="presentation" identifier="to_intro" modalPresentationStyle="fullScreen" id="niN-a5-h0V"/>
+                        <segue destination="Vbc-el-vhm" kind="presentation" identifier="to_home" modalPresentationStyle="fullScreen" id="HFc-mM-O7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrw-KF-s7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="63"/>
+        </scene>
+        <!--Intro-->
+        <scene sceneID="isR-ti-Pij">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" id="lHs-3j-XzZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JV2-Kx-Fc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="62"/>
+        </scene>
+        <!--Intro-->
+        <scene sceneID="ZcM-sE-Edz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" id="Vbc-el-vhm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsF-7y-86l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash.logo" width="208" height="58"/>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

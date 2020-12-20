@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecm-O5-zuV">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="HK2-D8-V9u">
+            <objects>
+                <viewController id="frv-jt-FPk" customClass="LoginViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uth-Ld-pa0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="7Xv-i5-8wu">
+                                <rect key="frame" x="20" y="166" width="374" height="247"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-3r-7nn">
+                                <rect key="frame" x="16" y="20" width="382" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni ve sade!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORy-9e-t69">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" name="MainTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fC-Be-qOu">
+                                        <rect key="frame" x="0.0" y="36.333333333333343" width="382" height="49.666666666666657"/>
+                                        <string key="text">saioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoisaioweqiofjqeoi</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" name="FadedTitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fw-VL-fUz" customClass="TopCorneredView" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="528" width="414" height="208"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xrJ-hi-er5">
+                                        <rect key="frame" x="16" y="16" width="382" height="176"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXS-cf-LkD" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
+                                                <color key="backgroundColor" name="MainButtonColorActive"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="5ah-sT-h6o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <state key="normal" title="Daxil ol">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="MYM-dx-ehu" kind="push" id="WLO-nm-ObH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-pJ-zbr">
+                                                <rect key="frame" x="0.0" y="68" width="382" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="yFe-lC-tUg"/>
+                                                </constraints>
+                                                <state key="normal" image="asanlogin">
+                                                    <color key="titleColor" name="MainTitleColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-Kw-XKa">
+                                                <rect key="frame" x="0.0" y="128" width="382" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="hNC-Fq-xJM"/>
+                                                </constraints>
+                                                <state key="normal" title="Qeydiyyatdan kec">
+                                                    <color key="titleColor" name="MainTitleColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="CellBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xrJ-hi-er5" secondAttribute="bottom" constant="16" id="0nL-Be-saY"/>
+                                    <constraint firstItem="xrJ-hi-er5" firstAttribute="leading" secondItem="8fw-VL-fUz" secondAttribute="leading" constant="16" id="Q63-E1-kcY"/>
+                                    <constraint firstItem="xrJ-hi-er5" firstAttribute="top" secondItem="8fw-VL-fUz" secondAttribute="top" constant="16" id="wgz-Za-3jY"/>
+                                    <constraint firstAttribute="trailing" secondItem="xrJ-hi-er5" secondAttribute="trailing" constant="16" id="y6E-i1-vdr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2pf-kw-VyK"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="8fw-VL-fUz" firstAttribute="leading" secondItem="2pf-kw-VyK" secondAttribute="leading" id="2dL-mA-d5J"/>
+                            <constraint firstItem="2pf-kw-VyK" firstAttribute="trailing" secondItem="lbD-3r-7nn" secondAttribute="trailing" constant="16" id="GTd-rk-Vsm"/>
+                            <constraint firstItem="2pf-kw-VyK" firstAttribute="trailing" secondItem="7Xv-i5-8wu" secondAttribute="trailing" constant="20" id="No4-5Q-jqn"/>
+                            <constraint firstItem="lbD-3r-7nn" firstAttribute="top" secondItem="2pf-kw-VyK" secondAttribute="top" constant="20" id="Twp-Px-jGf"/>
+                            <constraint firstAttribute="bottom" secondItem="8fw-VL-fUz" secondAttribute="bottom" id="f65-D7-x6i"/>
+                            <constraint firstItem="8fw-VL-fUz" firstAttribute="trailing" secondItem="2pf-kw-VyK" secondAttribute="trailing" id="ggo-fo-V90"/>
+                            <constraint firstItem="lbD-3r-7nn" firstAttribute="leading" secondItem="2pf-kw-VyK" secondAttribute="leading" constant="16" id="jO8-Q6-oB3"/>
+                            <constraint firstItem="7Xv-i5-8wu" firstAttribute="top" secondItem="lbD-3r-7nn" secondAttribute="bottom" constant="60" id="x3w-Q7-NgR"/>
+                            <constraint firstItem="7Xv-i5-8wu" firstAttribute="leading" secondItem="2pf-kw-VyK" secondAttribute="leading" constant="20" id="yaK-Rg-no5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N1d-ep-lhh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4n-wl-KQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097.1014492753625" y="92.119565217391312"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="MMG-4N-kAh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="MYM-dx-ehu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RDc-Xe-BaX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5h-SO-Kfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ldZ-lk-iDU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ecm-O5-zuV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4w8-cc-hFv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="frv-jt-FPk" kind="relationship" relationship="rootViewController" id="BrW-gA-5rr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-PS-7Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="92.119565217391312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="asanlogin" width="87" height="17"/>
+        <image name="login" width="297" height="247"/>
+        <namedColor name="CellBgColor">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

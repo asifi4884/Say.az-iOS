@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigButtonNavBar" customModule="Say_az" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="pBd-gR-e4V" id="PCk-Jd-jaK"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="ehL-Ms-HxR"/>
+                <outlet property="titleLbl" destination="tgC-ik-40s" id="UgR-uF-ZrX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-eO-zYU">
+                    <rect key="frame" x="16" y="430" width="145.5" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiI-Rf-Mid" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <color key="backgroundColor" name="OrangeButtonColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Slk-dy-uKY"/>
+                                <constraint firstAttribute="width" constant="36" id="pen-Oj-fyk"/>
+                            </constraints>
+                            <state key="normal" image="back.arrow"/>
+                            <connections>
+                                <action selector="backBtnTapped" destination="-1" eventType="touchUpInside" id="1Eb-GZ-s1E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-gR-e4V">
+                            <rect key="frame" x="48" y="0.0" width="30" height="36"/>
+                            <state key="normal" title="Geri">
+                                <color key="titleColor" name="MainTitleColor"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnTapped" destination="-1" eventType="touchUpInside" id="HXa-p8-fmY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-ik-40s">
+                            <rect key="frame" x="90" y="0.0" width="55.5" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="MainBGColor"/>
+            <constraints>
+                <constraint firstItem="Ve4-eO-zYU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2QP-P8-4dK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ve4-eO-zYU" secondAttribute="trailing" constant="8" id="6Rl-a4-5hG"/>
+                <constraint firstItem="Ve4-eO-zYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="N5I-Hx-hsw"/>
+            </constraints>
+            <point key="canvasLocation" x="-23" y="65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.arrow" width="8" height="14"/>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrangeButtonColor">
+            <color red="0.86699998378753662" green="0.49399998784065247" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
