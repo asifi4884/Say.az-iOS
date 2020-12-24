@@ -25,13 +25,13 @@ import UIKit
         }
         @IBInspectable var title: String = "" {
             didSet {
-                titleLbl.text = title
+                titleLbl.text = title.localize()
             }
         }
 
         @IBInspectable var leftTitle: String = "" {
             didSet {
-                leftTitleLbl.text = leftTitle
+                leftTitleLbl.text = leftTitle.localize()
             }
         }
         override init(frame: CGRect) {

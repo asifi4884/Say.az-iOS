@@ -21,11 +21,11 @@ class SplashViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //TODO: uncomment
-//        if (Storage.isLogged) {
+        if (Storage.isLogged) {
             openVC(of: .home)
-//        } else {
-//            openVC(of: .intro)
-//        }
+        } else {
+            openVC(of: .intro)
+        }
     }
 }
 

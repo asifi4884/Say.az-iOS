@@ -124,35 +124,6 @@
             </objects>
             <point key="canvasLocation" x="401" y="-634"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Rqg-X4-ycw">
-            <objects>
-                <tableViewController id="CKK-cA-WE9" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YZG-wK-RqF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SMX-Zi-Mls">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SMX-Zi-Mls" id="k9w-li-sVG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="CKK-cA-WE9" id="xAu-F0-cYa"/>
-                            <outlet property="delegate" destination="CKK-cA-WE9" id="iLm-vz-heQ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tRk-yx-nwG"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8qx-Iq-pQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2170" y="384"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Is-nV-bOo">
             <objects>
@@ -163,12 +134,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="CKK-cA-WE9" kind="relationship" relationship="rootViewController" id="mmE-Ym-NZY"/>
+                        <segue destination="YdP-bk-w7W" kind="relationship" relationship="rootViewController" id="iFE-4G-0H6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1H-Eq-Qoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1525" y="397"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="m98-O7-Nbc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="More" id="YdP-bk-w7W" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NVy-7V-zbY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vD2-hY-jht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="379"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="QBp-1h-n8Y">

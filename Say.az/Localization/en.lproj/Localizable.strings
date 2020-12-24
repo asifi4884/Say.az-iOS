@@ -68,7 +68,35 @@
 "back.button.title" = "Back";
 "register.button.arrow.title" = "регистр →";
 "register.button.title" = "регистр →";
-
+"cancel.button.title" = "Cancel";
+"yes.button.title" = "Yes";
 //_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 
+//------------------------------------------------------------------------
+//More(Profile-Settings) titles
+"profile.info.title" = "Profile information";
+"settings.title" = "Settings";
+"other.title" = "Others";
+
+"tax.invoices.title" = "My tax invoices";
+"bank.accounts.title" = "My bank accounts";
+"write.mail.to.ministry.title" = "Vergilər Nazirliyinə mail yaz";
+
+"language.title" = "Language";
+"ui.appearance.mode" = "Mode";
+
+"about.app.title" = "Tətbiq haqqında məlumat";
+"delete.profile.title" = "Delete profile";
+"delete.profile.alert.title" = "Are you sure to delete this account?";
+
+//------------------------------------------------------------------------
+//Language alert(popup) titles
+"ru.lang.title" = "Russian";
+"az.lang.title" = "Azerbaijan";
+"en.lang.title" = "English ✓";
+
+//------------------------------------------------------------------------
+//Mode  titles
+"dark.appearance.title" = "Dark";
+"light.appearance.title" = "Light";

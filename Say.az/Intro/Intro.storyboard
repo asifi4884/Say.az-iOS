@@ -11,7 +11,7 @@
         <!--Intro View Controller-->
         <scene sceneID="haG-KF-eCs">
             <objects>
-                <viewController id="rTs-Ux-Wsu" customClass="IntroViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroViewController" id="rTs-Ux-Wsu" customClass="IntroViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ywy-s9-Cvz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -11,4 +11,5 @@ enum SBName: String {
     case login = "Login"
     case login_option = "LoginOption"
     case intro = "Intro"
+    case home = "Home"
 }

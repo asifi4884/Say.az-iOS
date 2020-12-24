@@ -42,6 +42,8 @@
 		5F3A5DE6258A8B2B00EB447A /* BigButtonNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A5DE5258A8B2B00EB447A /* BigButtonNavBar.swift */; };
 		5F3A5DEB258A8B7400EB447A /* BigButtonNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3A5DEA258A8B7400EB447A /* BigButtonNavBar.xib */; };
 		5F3A5DF1258A8D4C00EB447A /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A5DF0258A8D4C00EB447A /* CustomNavigationBarVC.swift */; };
+		5F59100F2594E9B2007C3086 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59100E2594E9B2007C3086 /* MoreViewController.swift */; };
+		5F5910142595085B007C3086 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5910132595085B007C3086 /* Helper.swift */; };
 		5F604F26258FA80F00C0EBA1 /* RegisterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F604F25258FA80F00C0EBA1 /* RegisterFirstViewController.swift */; };
 		5F604F2B258FA8CC00C0EBA1 /* RegisterSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F604F2A258FA8CC00C0EBA1 /* RegisterSecondViewController.swift */; };
 		5F604F39258FAD0D00C0EBA1 /* DropdownInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F604F38258FAD0D00C0EBA1 /* DropdownInputView.swift */; };
@@ -122,6 +124,8 @@
 		5F3A5DE5258A8B2B00EB447A /* BigButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonNavBar.swift; sourceTree = "<group>"; };
 		5F3A5DEA258A8B7400EB447A /* BigButtonNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigButtonNavBar.xib; sourceTree = "<group>"; };
 		5F3A5DF0258A8D4C00EB447A /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
+		5F59100E2594E9B2007C3086 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		5F5910132595085B007C3086 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5F604F25258FA80F00C0EBA1 /* RegisterFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFirstViewController.swift; sourceTree = "<group>"; };
 		5F604F2A258FA8CC00C0EBA1 /* RegisterSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSecondViewController.swift; sourceTree = "<group>"; };
 		5F604F38258FAD0D00C0EBA1 /* DropdownInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownInputView.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0532DE2593D50B009457E4 /* More.storyboard */,
+				5F59100E2594E9B2007C3086 /* MoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				5F18A8C2258686300042F62E /* UIAppearance.swift */,
+				5F5910132595085B007C3086 /* Helper.swift */,
 				5F3A5DCC258A781600EB447A /* Storage.swift */,
 				5F3A5DB8258A722000EB447A /* SegueID.swift */,
 				5F0532CC2593AF2B009457E4 /* SBName.swift */,
@@ -341,9 +347,8 @@
 		5F3A5DD1258A7B2800EB447A /* Common UI */ = {
 			isa = PBXGroup;
 			children = (
+				5F5910072594E2B4007C3086 /* Simple Card View */,
 				5F3A5DD2258A7B6200EB447A /* RoundedButton.swift */,
-				5F0532E62593D614009457E4 /* SimpleCardView.xib */,
-				5F0532EB2593D888009457E4 /* SimpleCardView.swift */,
 				5F3A5DE0258A7EAC00EB447A /* TopCorneredView.swift */,
 				5F604F54258FC5FA00C0EBA1 /* ShadowyCorneredView.swift */,
 				5F3A5DF0258A8D4C00EB447A /* CustomNavigationBarVC.swift */,
@@ -371,6 +376,15 @@
 				5F93EB59258A8FCA0003CE1E /* UIResponder+ParenVC.swift */,
 			);
 			path = "Big Button Nav bar";
+			sourceTree = "<group>";
+		};
+		5F5910072594E2B4007C3086 /* Simple Card View */ = {
+			isa = PBXGroup;
+			children = (
+				5F0532E62593D614009457E4 /* SimpleCardView.xib */,
+				5F0532EB2593D888009457E4 /* SimpleCardView.swift */,
+			);
+			path = "Simple Card View";
 			sourceTree = "<group>";
 		};
 		5FA8648B2593961800E9C843 /* Localization */ = {
@@ -658,6 +672,7 @@
 				5F604F5A258FC62600C0EBA1 /* BankSelectViewController.swift in Sources */,
 				5F93EB5A258A8FCA0003CE1E /* UIResponder+ParenVC.swift in Sources */,
 				5F0532EC2593D888009457E4 /* SimpleCardView.swift in Sources */,
+				5F59100F2594E9B2007C3086 /* MoreViewController.swift in Sources */,
 				5F3A5DB9258A722000EB447A /* SegueID.swift in Sources */,
 				5F18A891258671B10042F62E /* SceneDelegate.swift in Sources */,
 				5F3A5DF1258A8D4C00EB447A /* CustomNavigationBarVC.swift in Sources */,
@@ -667,6 +682,7 @@
 				5F604F4C258FC2E400C0EBA1 /* AccounCardCell.swift in Sources */,
 				5F0532D92593CA98009457E4 /* CustomTableViewController.swift in Sources */,
 				5FA86487259395F800E9C843 /* LocalizationOnStoryboard.swift in Sources */,
+				5F5910142595085B007C3086 /* Helper.swift in Sources */,
 				5F3A5DB4258A71F700EB447A /* SplashViewController.swift in Sources */,
 				5F604F3E258FAD8200C0EBA1 /* UIView+TapGesture.swift in Sources */,
 				5F193641258E7C4300D406FA /* LoginViewController.swift in Sources */,
