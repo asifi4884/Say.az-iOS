@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C17-bg-NrH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bb5-oY-29e">
+            <objects>
+                <viewController id="C17-bg-NrH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbt-W6-v5B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAW-da-yLQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lhp-fG-HT3">
+                                        <rect key="frame" x="162" y="30" width="90" height="149"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no.photo" translatesAutoresizingMaskIntoConstraints="NO" id="jda-kU-ezp">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="2e7-wq-M1g"/>
+                                                    <constraint firstAttribute="width" constant="90" id="ovP-b9-ioa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0pE-8T-VgO">
+                                                <rect key="frame" x="7" y="102" width="76.5" height="47"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfD-id-P85">
+                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="26.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-wO-Agf">
+                                                        <rect key="frame" x="16" y="30.5" width="44.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="textColor" name="FadedTitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="D0O-f4-vrf"/>
+                                    <constraint firstItem="lhp-fG-HT3" firstAttribute="top" secondItem="WAW-da-yLQ" secondAttribute="top" constant="30" id="mhW-TE-uzQ"/>
+                                    <constraint firstItem="lhp-fG-HT3" firstAttribute="centerX" secondItem="WAW-da-yLQ" secondAttribute="centerX" id="uPZ-te-1uw"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-pz-jMY">
+                                <rect key="frame" x="0.0" y="244" width="414" height="618"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVz-uG-9CS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mVz-uG-9CS" secondAttribute="trailing" id="0cI-44-vnU"/>
+                                    <constraint firstItem="mVz-uG-9CS" firstAttribute="width" secondItem="eKV-pz-jMY" secondAttribute="width" id="HZX-mc-Yi6"/>
+                                    <constraint firstItem="mVz-uG-9CS" firstAttribute="leading" secondItem="eKV-pz-jMY" secondAttribute="leading" id="TEO-7c-47W"/>
+                                    <constraint firstItem="mVz-uG-9CS" firstAttribute="height" secondItem="eKV-pz-jMY" secondAttribute="height" priority="250" id="ZJK-Sn-868"/>
+                                    <constraint firstItem="mVz-uG-9CS" firstAttribute="top" secondItem="eKV-pz-jMY" secondAttribute="top" id="fzr-Ne-ebz"/>
+                                    <constraint firstAttribute="bottom" secondItem="mVz-uG-9CS" secondAttribute="bottom" id="kfb-b9-Huj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3wv-DE-gRk"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="WAW-da-yLQ" firstAttribute="top" secondItem="3wv-DE-gRk" secondAttribute="top" id="0hA-Mu-QW3"/>
+                            <constraint firstItem="3wv-DE-gRk" firstAttribute="trailing" secondItem="eKV-pz-jMY" secondAttribute="trailing" id="ILH-qb-JPM"/>
+                            <constraint firstItem="3wv-DE-gRk" firstAttribute="bottom" secondItem="eKV-pz-jMY" secondAttribute="bottom" id="cq0-oL-vs0"/>
+                            <constraint firstItem="eKV-pz-jMY" firstAttribute="leading" secondItem="3wv-DE-gRk" secondAttribute="leading" id="eFd-te-3eY"/>
+                            <constraint firstItem="3wv-DE-gRk" firstAttribute="trailing" secondItem="WAW-da-yLQ" secondAttribute="trailing" id="ild-5l-GHB"/>
+                            <constraint firstItem="WAW-da-yLQ" firstAttribute="leading" secondItem="3wv-DE-gRk" secondAttribute="leading" id="sQT-VW-LOf"/>
+                            <constraint firstItem="eKV-pz-jMY" firstAttribute="top" secondItem="WAW-da-yLQ" secondAttribute="bottom" id="wZo-dP-Lex"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bx-Ow-Wfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842.02898550724649" y="-352.23214285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no.photo" width="120" height="120"/>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

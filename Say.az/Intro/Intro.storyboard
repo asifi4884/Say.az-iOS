@@ -54,16 +54,20 @@
                                 <color key="pageIndicatorTintColor" name="MainTitleColor"/>
                                 <color key="currentPageIndicatorTintColor" name="MainButtonColorActive"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-EB-nRg">
-                                <rect key="frame" x="7" y="603" width="48" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-EB-nRg">
+                                <rect key="frame" x="16" y="603" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="B2E-Xp-wiF"/>
                                     <constraint firstAttribute="width" constant="48" id="sAx-J4-P71"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="Kec">
+                                <state key="normal" title="fasfsd">
                                     <color key="titleColor" name="FadedTitleColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="skip.button.title"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="passBtnTapped" destination="rTs-Ux-Wsu" eventType="touchUpInside" id="TnP-QG-9ZU"/>
                                 </connections>
@@ -74,12 +78,14 @@
                         <constraints>
                             <constraint firstItem="ILq-x5-Fuq" firstAttribute="bottom" secondItem="sHD-2r-N2r" secondAttribute="bottom" constant="16" id="0cN-cU-My7"/>
                             <constraint firstItem="qWh-lf-Z41" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ILq-x5-Fuq" secondAttribute="top" constant="60" id="2vD-OI-43D"/>
+                            <constraint firstItem="9Fk-bp-GmB" firstAttribute="leading" secondItem="3MF-EB-nRg" secondAttribute="trailing" constant="16" id="C55-VO-Rup"/>
                             <constraint firstItem="ILq-x5-Fuq" firstAttribute="trailing" secondItem="VyB-Jc-45r" secondAttribute="trailing" constant="16" id="NHx-45-mep"/>
                             <constraint firstItem="3MF-EB-nRg" firstAttribute="centerY" secondItem="9Fk-bp-GmB" secondAttribute="centerY" id="TJ5-GB-Au8"/>
                             <constraint firstItem="9Fk-bp-GmB" firstAttribute="centerY" secondItem="sHD-2r-N2r" secondAttribute="centerY" id="gAL-qB-2pp"/>
                             <constraint firstItem="9Fk-bp-GmB" firstAttribute="centerX" secondItem="ywy-s9-Cvz" secondAttribute="centerX" id="iQr-25-9kc"/>
                             <constraint firstItem="qWh-lf-Z41" firstAttribute="centerY" secondItem="ywy-s9-Cvz" secondAttribute="centerY" constant="-60" id="kAi-gt-ABD"/>
                             <constraint firstItem="qWh-lf-Z41" firstAttribute="leading" secondItem="ILq-x5-Fuq" secondAttribute="leading" constant="20" id="mxw-vR-YM1"/>
+                            <constraint firstItem="3MF-EB-nRg" firstAttribute="leading" secondItem="ILq-x5-Fuq" secondAttribute="leading" constant="16" id="pAn-Jj-xfX"/>
                             <constraint firstItem="VyB-Jc-45r" firstAttribute="top" secondItem="qWh-lf-Z41" secondAttribute="bottom" constant="60" id="uS7-FV-Ud0"/>
                             <constraint firstItem="sHD-2r-N2r" firstAttribute="leading" secondItem="9Fk-bp-GmB" secondAttribute="trailing" constant="16" id="uol-RG-VZW"/>
                             <constraint firstItem="9Fk-bp-GmB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VyB-Jc-45r" secondAttribute="bottom" constant="10" id="v07-Z0-eUQ"/>

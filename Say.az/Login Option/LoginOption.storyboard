@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login Option View Controller-->
         <scene sceneID="HK2-D8-V9u">
             <objects>
-                <viewController id="frv-jt-FPk" customClass="LoginViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginOptionViewController" id="frv-jt-FPk" customClass="LoginOptionViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uth-Ld-pa0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <color key="textColor" name="MainTitleColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="login.option.title"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fC-Be-qOu">
                                         <rect key="frame" x="0.0" y="36.333333333333343" width="382" height="49.666666666666657"/>
@@ -34,6 +37,9 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" name="FadedTitleColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="login.option.subtitle"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                             </stackView>
@@ -53,8 +59,11 @@
                                                 <state key="normal" title="Daxil ol">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="asan.pass.button.title"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="MYM-dx-ehu" kind="push" id="WLO-nm-ObH"/>
+                                                    <action selector="asanPassBtnTapped" destination="frv-jt-FPk" eventType="touchUpInside" id="6l5-Xv-93P"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-pJ-zbr">
@@ -65,6 +74,9 @@
                                                 <state key="normal" image="asanlogin">
                                                     <color key="titleColor" name="MainTitleColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="asanLoginBtnTapped" destination="frv-jt-FPk" eventType="touchUpInside" id="pTP-Xp-FdP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-Kw-XKa">
                                                 <rect key="frame" x="0.0" y="128" width="382" height="48"/>
@@ -74,6 +86,12 @@
                                                 <state key="normal" title="Qeydiyyatdan kec">
                                                     <color key="titleColor" name="MainTitleColor"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="register.button.arrow.title"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resgiterBtnTapped" destination="frv-jt-FPk" eventType="touchUpInside" id="OIq-Rh-M19"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -108,16 +126,6 @@
             </objects>
             <point key="canvasLocation" x="1097.1014492753625" y="92.119565217391312"/>
         </scene>
-        <!--Login-->
-        <scene sceneID="MMG-4N-kAh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="MYM-dx-ehu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RDc-Xe-BaX"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5h-SO-Kfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1682" y="92"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ldZ-lk-iDU">
             <objects>
@@ -141,7 +149,7 @@
         <image name="asanlogin" width="87" height="17"/>
         <image name="login" width="297" height="247"/>
         <namedColor name="CellBgColor">
-            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FadedTitleColor">
             <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

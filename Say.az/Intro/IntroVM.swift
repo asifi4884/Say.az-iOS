@@ -11,18 +11,11 @@ class IntroVM {
     
     // MARK: - Get intro texts and button text
     func getText(of index: Int) -> (title: String, subTitle: String) {
-    
-        switch index {
-        
-        case 0:
-            return ("introText", "DAVAM ET")
-        case 1:
-            return ("introText", "DAVAM ET")
-        case 2:
-            return ("introText", "DAXİL OL")
-        default:
-            fatalError("index is out of bounds")
-        }
+
+        let title = "intro.top.title.\(index)".localize()
+        let subtitle = "intro.subtitle.\(index)".localize()
+
+        return (title, subtitle)
     }
     
     //MARK: - Get image of index

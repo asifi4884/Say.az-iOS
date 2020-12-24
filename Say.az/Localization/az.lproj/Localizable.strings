@@ -1,0 +1,72 @@
+/*
+  Localization.strings
+  Say.az
+
+  Created by Ulxan Emiraslanov on 12/23/20.
+
+*/
+
+//------------------------------------------------------------------------
+//Intro screen titles
+"intro.top.title.0" = "Yeni və sadə!";
+"intro.subtitle.0" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+
+"intro.top.title.1" = "Daha rahat!";
+"intro.subtitle.1" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+
+"intro.top.title.2" = "YDaha sərfəli!";
+"intro.subtitle.2" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+
+"skip.button.title" = "ПРОПУСКАТЬ";
+
+//------------------------------------------------------------------------
+//LoginOption screen titles
+"login.option.title" = "вход";
+"login.option.subtitle" = "ASAN imza vasitəsəilə və ya asan pass ilə rahatlıqla platformaya daxil ola bilərsiniz.";
+"asan.pass.button.title" = "Asan Pass";
+
+//------------------------------------------------------------------------
+//Asan Login
+"asan.login.title" = "Asan login";
+"asan.login.subtitle" = "Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin.";
+"login.button.title" = "Log in";
+"info.button.title" = "Info →";
+
+
+//------------------------------------------------------------------------
+//Register first screen titles
+"register.first.title" = "Qeydiyyat";
+"register.first.subtitle" = "Qeydiyyatdan keçmək, zəhmət olmasa, asan nömrənizi daxil edin.";
+"next.button.title" = "Növbəti";
+
+//------------------------------------------------------------------------
+//Register second screen titles
+"upload.photo.title" = "Şəkil yüklə";
+
+//------------------------------------------------------------------------
+//Bank account(card) screen titles
+"bank.select.title" = "Bank hesabı aç";
+"bank.select.subtitle" = "Bu bölmədə istənilən bankda hesab açaraq kart sifarişi göndərə bilərsiniz.";
+"send.button.title" = "Göndər";
+
+
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+//Input text placeholders
+"phone.no.placeholder" = "Phone";
+"person.id.placeholder" = "İstifadəçi ID-si";
+"name.placeholder" = "Ad";
+"surname.placeholder" = "Soyad";
+"asan.no.placeholder" = "Asan no";
+"pin.no.placeholder" = "FİN";
+"speciality.placeholder" = "Fəaliyyət növü";
+"choose.bank.placeholder" = "Bank seç";
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+//Shared Button titles
+"back.button.title" = "Back";
+"register.button.title" = "регистр →";
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+

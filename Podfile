@@ -8,6 +8,7 @@ target 'Say.az' do
   # Pods for Say.az
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire', '~> 5.2'
+pod 'DropDown'
 
   target 'Say.azTests' do
     inherit! :search_paths
