@@ -12,7 +12,7 @@ class BigButtonNavBar: UIView {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var containerView: UIView!
-    
+
     @IBAction func backBtnTapped() {
         backAction()
     }

@@ -8,9 +8,7 @@
 import UIKit
 
 class CustomNavigationBarVC: UIViewController {
-
-    @IBInspectable
-    var navTitle: String = ""
+    
     private lazy var customNavBar = BigButtonNavBar()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +18,29 @@ class CustomNavigationBarVC: UIViewController {
         for view in navController.navigationBar.subviews {
             if let _ = view as? BigButtonNavBar { return }
         }
-        customNavBar.titleLbl.text = navTitle
+        
         customNavBar.frame = navController.navigationBar.frame
         customNavBar.backAction = { self.navigationController?.popViewController(animated: true) }
         navController.navigationBar.addSubview(customNavBar)
-
+        
         navController.navigationBar.isTranslucent = false
         navController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navController.navigationBar.shadowImage = UIImage()
         navController.navigationBar.barTintColor = customNavBar.containerView.backgroundColor
     }
     
+    func setTitle(_ string: String) {
+        
+
+        guard let navController = self.navigationController else { return }
+        for view in navController.navigationBar.subviews {
+            if let view = view as? BigButtonNavBar {
+                view.titleLbl.text = string
+                view.backButton.isHidden = !string.isEmpty
+
+            }
+        }
+            }
 
 
    

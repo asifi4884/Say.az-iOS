@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-eO-zYU">
-                    <rect key="frame" x="16" y="430" width="145.5" height="36"/>
+                    <rect key="frame" x="16" y="430" width="139" height="36"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiI-Rf-Mid" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -47,8 +47,8 @@
                                 <action selector="backBtnTapped" destination="-1" eventType="touchUpInside" id="HXa-p8-fmY"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-ik-40s">
-                            <rect key="frame" x="90" y="0.0" width="55.5" height="36"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-ik-40s">
+                            <rect key="frame" x="90" y="0.0" width="49" height="36"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

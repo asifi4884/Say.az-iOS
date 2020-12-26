@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarView" customModule="Say_az" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLbl" destination="Mcm-Yg-Lk3" id="SEy-Lf-bRT"/>
+                <outlet property="containerView" destination="4n5-ye-Ifs" id="dcg-Ng-yJN"/>
+                <outlet property="iconImgView" destination="hl0-Rb-0H2" id="BvY-d8-LJe"/>
+                <outlet property="topLbl" destination="jVp-B0-Lqh" id="udW-pU-mXd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4n5-ye-Ifs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7sH-gx-rmB">
+                    <rect key="frame" x="314" y="430" width="84" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-OR-Kzg" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <color key="backgroundColor" red="0.83921568627450982" green="0.9137254901960784" blue="0.92941176470588238" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="MLU-l1-LMz"/>
+                                <constraint firstAttribute="height" constant="36" id="QVy-OO-Y7z"/>
+                            </constraints>
+                            <state key="normal" image="phone.top.bar.icon"/>
+                            <connections>
+                                <action selector="phoneBtnTapped" destination="-1" eventType="touchUpInside" id="29J-p5-G18"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA7-mL-kji" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                            <rect key="frame" x="48" y="0.0" width="36" height="36"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.87058823529411766" blue="0.79607843137254897" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="AaR-sH-6hL"/>
+                                <constraint firstAttribute="height" constant="36" id="Diz-ZD-jvY"/>
+                            </constraints>
+                            <state key="normal" image="bell.top.bar.icon"/>
+                            <connections>
+                                <action selector="notifBtnTapped" destination="-1" eventType="touchUpInside" id="Qc5-fX-2c9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="spD-m8-GLD"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no.photo" translatesAutoresizingMaskIntoConstraints="NO" id="hl0-Rb-0H2">
+                    <rect key="frame" x="16" y="430" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Tkr-Hm-afP"/>
+                        <constraint firstAttribute="height" constant="36" id="jIN-iD-Dha"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-VV-f0Z">
+                    <rect key="frame" x="64" y="430" width="52.5" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-B0-Lqh">
+                            <rect key="frame" x="0.0" y="0.0" width="52.5" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mcm-Yg-Lk3">
+                            <rect key="frame" x="0.0" y="22" width="52.5" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" name="FadedTitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="V5j-SP-QM1"/>
+            <color key="backgroundColor" name="MainBGColor"/>
+            <constraints>
+                <constraint firstItem="hl0-Rb-0H2" firstAttribute="centerY" secondItem="4n5-ye-Ifs" secondAttribute="centerY" id="D7d-oH-ilE"/>
+                <constraint firstItem="7sH-gx-rmB" firstAttribute="centerY" secondItem="4n5-ye-Ifs" secondAttribute="centerY" id="OIb-an-5HG"/>
+                <constraint firstItem="1ay-VV-f0Z" firstAttribute="leading" secondItem="hl0-Rb-0H2" secondAttribute="trailing" constant="12" id="Z5p-QE-ZqM"/>
+                <constraint firstItem="1ay-VV-f0Z" firstAttribute="centerY" secondItem="4n5-ye-Ifs" secondAttribute="centerY" id="ZKL-zi-k1p"/>
+                <constraint firstItem="7sH-gx-rmB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ay-VV-f0Z" secondAttribute="trailing" constant="12" id="h6F-ru-pct"/>
+                <constraint firstItem="hl0-Rb-0H2" firstAttribute="leading" secondItem="V5j-SP-QM1" secondAttribute="leading" constant="16" id="jfb-BP-a2V"/>
+                <constraint firstItem="V5j-SP-QM1" firstAttribute="trailing" secondItem="7sH-gx-rmB" secondAttribute="trailing" constant="16" id="lnM-JV-S0O"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="64.955357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bell.top.bar.icon" width="16" height="16"/>
+        <image name="no.photo" width="120" height="120"/>
+        <image name="phone.top.bar.icon" width="16" height="16"/>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

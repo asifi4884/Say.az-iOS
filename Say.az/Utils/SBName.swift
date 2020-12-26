@@ -12,4 +12,6 @@ enum SBName: String {
     case login_option = "LoginOption"
     case intro = "Intro"
     case home = "Home"
+    case more = "More"
+    case bank_account = "BankAccount"
 }

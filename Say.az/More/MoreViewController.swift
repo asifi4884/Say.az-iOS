@@ -80,6 +80,9 @@ extension MoreViewController {
         switch index {
         case 0:
             break
+        case 2:
+            let vc = BankCardViewController().initialize(fromSb: .bank_account)!
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

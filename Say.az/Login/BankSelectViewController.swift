@@ -31,7 +31,7 @@ class BankSelectViewController: CustomNavigationBarVC, UITableViewDelegate, UITa
 
         bankListInput.selectedItem = { (index, item) in
             self.tableView.reloadData {
-                self.tableHeight.constant = self.tableView.contentSize.height*2
+                self.tableHeight.constant = 100*3
             }
 
         }

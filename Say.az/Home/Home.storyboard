@@ -197,34 +197,15 @@
             </objects>
             <point key="canvasLocation" x="-3609" y="221"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Mw1-lU-pd0">
+        <!--Incomes-->
+        <scene sceneID="EDQ-yW-z99">
             <objects>
-                <tableViewController id="JhB-Cx-752" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NQ2-Gb-A2z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PKc-G4-AKA">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PKc-G4-AKA" id="8yi-ut-2Qq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="JhB-Cx-752" id="UrQ-oL-UFg"/>
-                            <outlet property="delegate" destination="JhB-Cx-752" id="iaj-zg-mUf"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="zaF-pS-yNe"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ah-Mt-37Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Incomes" id="2dh-ob-CJ4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qFr-PQ-JRk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfw-5h-rK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3710" y="-1161"/>
+            <point key="canvasLocation" x="-3870" y="-986"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qi9-lN-3Wr">
@@ -238,12 +219,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="JhB-Cx-752" kind="relationship" relationship="rootViewController" id="B0u-5f-92O"/>
+                        <segue destination="2dh-ob-CJ4" kind="relationship" relationship="rootViewController" id="snK-No-T51"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rt-7z-wkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3577" y="-599"/>
+            <point key="canvasLocation" x="-3762" y="-425"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="CommonTableViewCell" customModule="Say_az" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-SC-qqf">
+                        <rect key="frame" x="15" y="8" width="434" height="89"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-EL-fcI" customClass="CustomButton" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28.5" width="32" height="32"/>
+                                <color key="backgroundColor" name="CellBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4UU-Kr-YVy"/>
+                                    <constraint firstAttribute="width" constant="32" id="QNF-UN-AuH"/>
+                                </constraints>
+                                <state key="normal" image="verified.icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="FadedTitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGF-zN-dvu" customClass="CustomButton" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="42" y="28.5" width="32" height="32"/>
+                                <color key="backgroundColor" name="CellBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="UZN-Qt-igf"/>
+                                    <constraint firstAttribute="height" constant="32" id="vVU-bg-IKS"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="FadedTitleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteBtnTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="d4U-NU-fzH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJj-x8-zGR" customClass="ShadowyCorneredView" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="84" y="13.5" width="350" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-dQ-8vT">
+                                        <rect key="frame" x="16" y="13" width="92.5" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no.photo" translatesAutoresizingMaskIntoConstraints="NO" id="ih8-9Q-2bq">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="jjC-kG-c8P"/>
+                                                    <constraint firstAttribute="height" constant="36" id="qAe-dA-7Ux"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AbV-0o-Xvs">
+                                                <rect key="frame" x="48" y="2" width="44.5" height="32.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5P-2I-0yc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-k6-IKn">
+                                                        <rect key="frame" x="0.0" y="18.5" width="44.5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="FadedTitleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kcq-97-70S">
+                                        <rect key="frame" x="289.5" y="15" width="44.5" height="32.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-UH-QUa">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" name="MainButtonColorActive"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-rZ-y6A">
+                                                <rect key="frame" x="0.0" y="18.5" width="44.5" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" name="FadedTitleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="CellBgColor"/>
+                                <constraints>
+                                    <constraint firstItem="5PB-dQ-8vT" firstAttribute="centerY" secondItem="dJj-x8-zGR" secondAttribute="centerY" id="4Xl-kf-NHp"/>
+                                    <constraint firstItem="kcq-97-70S" firstAttribute="centerY" secondItem="dJj-x8-zGR" secondAttribute="centerY" id="9Ws-Ge-bE6"/>
+                                    <constraint firstItem="5PB-dQ-8vT" firstAttribute="leading" secondItem="dJj-x8-zGR" secondAttribute="leading" constant="16" id="Cko-dC-uBc"/>
+                                    <constraint firstAttribute="height" constant="62" id="VbD-rv-OeF"/>
+                                    <constraint firstAttribute="trailing" secondItem="kcq-97-70S" secondAttribute="trailing" constant="16" id="nFU-bT-gMl"/>
+                                    <constraint firstItem="kcq-97-70S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5PB-dQ-8vT" secondAttribute="trailing" constant="4" id="vUj-Yl-5aG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tNG-SC-qqf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7X9-H2-iEH"/>
+                    <constraint firstItem="tNG-SC-qqf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8bQ-fk-F05"/>
+                    <constraint firstAttribute="trailing" secondItem="tNG-SC-qqf" secondAttribute="trailing" constant="15" id="OJQ-tX-N5L"/>
+                    <constraint firstAttribute="bottom" secondItem="tNG-SC-qqf" secondAttribute="bottom" constant="8" id="wGr-dK-8rg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="leftActionBtns" destination="9BT-EL-fcI" collectionClass="NSMutableArray" id="PjC-jV-PP7"/>
+                <outletCollection property="leftActionBtns" destination="nGF-zN-dvu" collectionClass="NSMutableArray" id="LRW-hZ-ijF"/>
+            </connections>
+            <point key="canvasLocation" x="65.217391304347828" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="16" height="16"/>
+        <image name="no.photo" width="120" height="120"/>
+        <image name="verified.icon" width="17" height="13"/>
+        <namedColor name="CellBgColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

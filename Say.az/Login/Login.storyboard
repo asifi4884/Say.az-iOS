@@ -454,10 +454,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="523"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKf-Tq-EYx">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="565.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fzl-bC-bU8">
-                                                <rect key="frame" x="15" y="40" width="345" height="53.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fzl-bC-bU8">
+                                                <rect key="frame" x="15" y="40" width="345" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank hesabı aç" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-qv-59a">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="26.5"/>
@@ -469,7 +469,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu bölmədə istənilən bankda hesab açaraq kart sifarişi göndərə bilərsiniz." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ4-wr-0Rw">
-                                                        <rect key="frame" x="0.0" y="36.5" width="345" height="17"/>
+                                                        <rect key="frame" x="0.0" y="36.5" width="345" height="33.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" name="FadedTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -480,7 +480,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="yTc-cF-Tt9">
-                                                <rect key="frame" x="15" y="153.5" width="345" height="60"/>
+                                                <rect key="frame" x="15" y="170" width="345" height="60"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-rO-MFL" customClass="DropdownInputView" customModule="Say_az" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
@@ -497,7 +497,7 @@
                                                 </subviews>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eZg-Wm-w5k">
-                                                <rect key="frame" x="0.0" y="233.5" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="250" width="375" height="300"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="0Su-M9-w5q"/>

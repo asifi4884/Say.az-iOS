@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleView" customModule="Say_az" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Eup-3W-SOZ" id="BTz-N5-1Jt"/>
+                <outlet property="filterBtn" destination="7EK-Ur-XIm" id="dO5-jX-M6K"/>
+                <outlet property="titleLbl" destination="rpW-dC-Vjm" id="hZG-iF-WRQ"/>
+                <outletCollection property="filterView" destination="7EK-Ur-XIm" collectionClass="NSMutableArray" id="F0W-q6-6KQ"/>
+                <outletCollection property="filterView" destination="6ws-dV-131" collectionClass="NSMutableArray" id="Dhj-03-cp8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Eup-3W-SOZ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VuA-W3-tft">
+                    <rect key="frame" x="15" y="430" width="384" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpW-dC-Vjm">
+                            <rect key="frame" x="0.0" y="0.0" width="316" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EK-Ur-XIm">
+                            <rect key="frame" x="324" y="0.0" width="44" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="qewfqf">
+                                <color key="titleColor" name="MainButtonColorActive"/>
+                            </state>
+                            <connections>
+                                <action selector="filterBtnTapped" destination="-1" eventType="touchUpInside" id="cvq-MQ-Wt1"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down.arrow" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-dV-131">
+                            <rect key="frame" x="376" y="0.0" width="8" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="8" id="xgZ-kp-Axb"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rpW-dC-Vjm" firstAttribute="width" secondItem="VuA-W3-tft" secondAttribute="width" priority="750" id="tKj-rZ-mhQ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="axy-yU-pCm"/>
+            <color key="backgroundColor" name="MainBGColor"/>
+            <constraints>
+                <constraint firstItem="axy-yU-pCm" firstAttribute="trailing" secondItem="VuA-W3-tft" secondAttribute="trailing" constant="15" id="9Wz-jv-tx0"/>
+                <constraint firstItem="VuA-W3-tft" firstAttribute="leading" secondItem="axy-yU-pCm" secondAttribute="leading" constant="15" id="TJy-Vg-2Ij"/>
+                <constraint firstItem="VuA-W3-tft" firstAttribute="centerY" secondItem="Eup-3W-SOZ" secondAttribute="centerY" id="oFo-Nb-Zgt"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="64.955357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down.arrow" width="14" height="8"/>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

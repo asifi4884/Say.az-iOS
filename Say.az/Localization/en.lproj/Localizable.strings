@@ -60,6 +60,10 @@
 "pin.no.placeholder" = "FİN";
 "speciality.placeholder" = "Fəaliyyət növü";
 "choose.bank.placeholder" = "Bank seç";
+"card.no.placeholder" = "Card no";
+"card.expire.date.placeholder" = "Expire date";
+"card.cvc.cvv.placeholder" = "CVC\CVV";
+"search.placeholder" = "Axtar...";
 //_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 
@@ -70,6 +74,9 @@
 "register.button.title" = "регистр →";
 "cancel.button.title" = "Cancel";
 "yes.button.title" = "Yes";
+"add.card.button.title" = "Yenisini əlavə et";
+"add.button.title" = "Add";
+
 //_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 
@@ -100,3 +107,11 @@
 //Mode  titles
 "dark.appearance.title" = "Dark";
 "light.appearance.title" = "Light";
+
+//------------------------------------------------------------------------
+//Add bank account  titles
+"add.new.bank.account.title" = "Hesab əlavə et";
+
+//------------------------------------------------------------------------
+//Incomes screen titles
+"no.income.title" = "Gəlirlərinizi görmək üçün bank hesabı əlavə edin.";
