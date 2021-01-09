@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -60,17 +61,17 @@
                         <constraint firstAttribute="height" constant="36" id="jIN-iD-Dha"/>
                     </constraints>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-VV-f0Z">
-                    <rect key="frame" x="64" y="430" width="52.5" height="36"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-VV-f0Z">
+                    <rect key="frame" x="64" y="430" width="238" height="36"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-B0-Lqh">
-                            <rect key="frame" x="0.0" y="0.0" width="52.5" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jhon Alean" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-B0-Lqh">
+                            <rect key="frame" x="0.0" y="0.0" width="74.5" height="18.5"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" gdhfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mcm-Yg-Lk3">
-                            <rect key="frame" x="0.0" y="22" width="52.5" height="14"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="748567612534674857473625" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mcm-Yg-Lk3">
+                            <rect key="frame" x="0.0" y="20.5" width="160.5" height="15.5"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                             <color key="textColor" name="FadedTitleColor"/>
@@ -86,7 +87,7 @@
                 <constraint firstItem="7sH-gx-rmB" firstAttribute="centerY" secondItem="4n5-ye-Ifs" secondAttribute="centerY" id="OIb-an-5HG"/>
                 <constraint firstItem="1ay-VV-f0Z" firstAttribute="leading" secondItem="hl0-Rb-0H2" secondAttribute="trailing" constant="12" id="Z5p-QE-ZqM"/>
                 <constraint firstItem="1ay-VV-f0Z" firstAttribute="centerY" secondItem="4n5-ye-Ifs" secondAttribute="centerY" id="ZKL-zi-k1p"/>
-                <constraint firstItem="7sH-gx-rmB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ay-VV-f0Z" secondAttribute="trailing" constant="12" id="h6F-ru-pct"/>
+                <constraint firstItem="7sH-gx-rmB" firstAttribute="leading" secondItem="1ay-VV-f0Z" secondAttribute="trailing" constant="12" id="h6F-ru-pct"/>
                 <constraint firstItem="hl0-Rb-0H2" firstAttribute="leading" secondItem="V5j-SP-QM1" secondAttribute="leading" constant="16" id="jfb-BP-a2V"/>
                 <constraint firstItem="V5j-SP-QM1" firstAttribute="trailing" secondItem="7sH-gx-rmB" secondAttribute="trailing" constant="16" id="lnM-JV-S0O"/>
             </constraints>

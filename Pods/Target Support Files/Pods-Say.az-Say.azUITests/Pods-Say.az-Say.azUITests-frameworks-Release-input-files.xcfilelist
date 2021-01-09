@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Say.az-Say.azUITests/Pods-Say.az-Say.azUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework

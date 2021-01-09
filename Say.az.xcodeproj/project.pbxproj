@@ -16,9 +16,13 @@
 		5F0532DF2593D50B009457E4 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0532DE2593D50B009457E4 /* More.storyboard */; };
 		5F0532E72593D614009457E4 /* SimpleCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0532E62593D614009457E4 /* SimpleCardView.xib */; };
 		5F0532EC2593D888009457E4 /* SimpleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0532EB2593D888009457E4 /* SimpleCardView.swift */; };
+		5F0BBCD225A8C30B00B5951F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0BBCD125A8C30B00B5951F /* Dashboard.storyboard */; };
+		5F0BBCD825A8C53400B5951F /* DashboarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BBCD725A8C53400B5951F /* DashboarContainerViewController.swift */; };
+		5F0BBCE025A8C58F00B5951F /* DashboardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BBCDF25A8C58F00B5951F /* DashboardListViewController.swift */; };
+		5F0BBCE525A8C6E300B5951F /* LineChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BBCE425A8C6E300B5951F /* LineChartCell.swift */; };
+		5F0BBCEA25A8CE8C00B5951F /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BBCE925A8CE8C00B5951F /* ChartData.swift */; };
 		5F18A88F258671B10042F62E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A88E258671B10042F62E /* AppDelegate.swift */; };
 		5F18A891258671B10042F62E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A890258671B10042F62E /* SceneDelegate.swift */; };
-		5F18A893258671B10042F62E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A892258671B10042F62E /* ViewController.swift */; };
 		5F18A898258671B40042F62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F18A897258671B40042F62E /* Assets.xcassets */; };
 		5F18A89B258671B40042F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F18A899258671B40042F62E /* LaunchScreen.storyboard */; };
 		5F18A8A6258671B40042F62E /* Say_azTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A8A5258671B40042F62E /* Say_azTests.swift */; };
@@ -74,6 +78,16 @@
 		5FA86486259395F800E9C843 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86484259395F800E9C843 /* LocalizationManager.swift */; };
 		5FA86487259395F800E9C843 /* LocalizationOnStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86485259395F800E9C843 /* LocalizationOnStoryboard.swift */; };
 		5FA864A4259398DA00E9C843 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA864A3259398DA00E9C843 /* Intro.storyboard */; };
+		5FEF4FF525A9C17800328161 /* Receipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF4FF425A9C17800328161 /* Receipt.storyboard */; };
+		5FEF4FFA25A9C56500328161 /* ReceiptContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4FF925A9C56500328161 /* ReceiptContainerViewController.swift */; };
+		5FEF4FFF25A9C58C00328161 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4FFE25A9C58C00328161 /* ReceiptListViewController.swift */; };
+		5FEF500425A9E02B00328161 /* RightDropdownInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF500325A9E02B00328161 /* RightDropdownInputView.swift */; };
+		5FEF500A25AA1A7D00328161 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF500925AA1A7D00328161 /* Report.storyboard */; };
+		5FEF501025AA1BA100328161 /* ReportContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF500F25AA1BA100328161 /* ReportContainerViewController.swift */; };
+		5FEF501825AA1BC500328161 /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF501725AA1BC500328161 /* AddReportViewController.swift */; };
+		5FEF501E25AA1E5800328161 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF501D25AA1E5800328161 /* Notifications.storyboard */; };
+		5FEF502625AA1ED100328161 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF502525AA1ED100328161 /* NotificationsViewController.swift */; };
+		5FEF503825AA34DD00328161 /* AddReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF503725AA34DD00328161 /* AddReceiptViewController.swift */; };
 		D56B094208B373036779C14F /* Pods_Say_az.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A582AAB97731B4F44AF867C /* Pods_Say_az.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,10 +122,14 @@
 		5F0532DE2593D50B009457E4 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		5F0532E62593D614009457E4 /* SimpleCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleCardView.xib; sourceTree = "<group>"; };
 		5F0532EB2593D888009457E4 /* SimpleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCardView.swift; sourceTree = "<group>"; };
+		5F0BBCD125A8C30B00B5951F /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		5F0BBCD725A8C53400B5951F /* DashboarContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboarContainerViewController.swift; sourceTree = "<group>"; };
+		5F0BBCDF25A8C58F00B5951F /* DashboardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardListViewController.swift; sourceTree = "<group>"; };
+		5F0BBCE425A8C6E300B5951F /* LineChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartCell.swift; sourceTree = "<group>"; };
+		5F0BBCE925A8CE8C00B5951F /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		5F18A88B258671B10042F62E /* Say.az.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Say.az.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F18A88E258671B10042F62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F18A890258671B10042F62E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F18A892258671B10042F62E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F18A897258671B40042F62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F18A89A258671B40042F62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F18A89C258671B40042F62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +194,17 @@
 		5FA86484259395F800E9C843 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		5FA86485259395F800E9C843 /* LocalizationOnStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationOnStoryboard.swift; sourceTree = "<group>"; };
 		5FA864A3259398DA00E9C843 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		5FEF4FF425A9C17800328161 /* Receipt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receipt.storyboard; sourceTree = "<group>"; };
+		5FEF4FF925A9C56500328161 /* ReceiptContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptContainerViewController.swift; sourceTree = "<group>"; };
+		5FEF4FFE25A9C58C00328161 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
+		5FEF500325A9E02B00328161 /* RightDropdownInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightDropdownInputView.swift; sourceTree = "<group>"; };
+		5FEF500925AA1A7D00328161 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		5FEF500F25AA1BA100328161 /* ReportContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportContainerViewController.swift; sourceTree = "<group>"; };
+		5FEF501725AA1BC500328161 /* AddReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
+		5FEF501D25AA1E5800328161 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		5FEF502525AA1ED100328161 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		5FEF503725AA34DD00328161 /* AddReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReceiptViewController.swift; sourceTree = "<group>"; };
+		5FFBFCC125990DA600F0DED7 /* Say.az.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Say.az.entitlements; sourceTree = "<group>"; };
 		BD4688BCB13FAFA48CB9069B /* Pods-Say.az-Say.azUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Say.az-Say.azUITests.release.xcconfig"; path = "Target Support Files/Pods-Say.az-Say.azUITests/Pods-Say.az-Say.azUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4357DCB7D4801BF471B96E8 /* Pods-Say.azTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Say.azTests.release.xcconfig"; path = "Target Support Files/Pods-Say.azTests/Pods-Say.azTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECB1C17BACA0272F537CF79F /* Pods_Say_azTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Say_azTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +286,18 @@
 			path = More;
 			sourceTree = "<group>";
 		};
+		5F0BBCCD25A8C27A00B5951F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F0BBCD125A8C30B00B5951F /* Dashboard.storyboard */,
+				5F0BBCD725A8C53400B5951F /* DashboarContainerViewController.swift */,
+				5F0BBCDF25A8C58F00B5951F /* DashboardListViewController.swift */,
+				5F0BBCE425A8C6E300B5951F /* LineChartCell.swift */,
+				5F0BBCE925A8CE8C00B5951F /* ChartData.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		5F18A882258671B10042F62E = {
 			isa = PBXGroup;
 			children = (
@@ -282,15 +323,13 @@
 		5F18A88D258671B10042F62E /* Say.az */ = {
 			isa = PBXGroup;
 			children = (
-				5F577F7625966B7B0039124B /* Incomes */,
-				5F593DC425961A3500CEA848 /* Bank Accounts(Card) */,
-				5F0532DD2593D4F8009457E4 /* More */,
+				5FFBFCC125990DA600F0DED7 /* Say.az.entitlements */,
+				5FEF4FF225A9C06F00328161 /* Main */,
 				5F0532D22593C320009457E4 /* Home */,
 				5F0532D12593C303009457E4 /* AppDelegate */,
 				5F0532C62593AEAE009457E4 /* Extensions */,
 				5F18A8C12586861C0042F62E /* Utils */,
 				5FA8648B2593961800E9C843 /* Localization */,
-				5F18A892258671B10042F62E /* ViewController.swift */,
 				5F3A5DDA258A7D3700EB447A /* Login Option */,
 				5F19363A258E797700D406FA /* Login */,
 				5F3A5DD1258A7B2800EB447A /* Common UI */,
@@ -341,6 +380,7 @@
 			children = (
 				5F193634258E73F600D406FA /* InputView.swift */,
 				5F604F38258FAD0D00C0EBA1 /* DropdownInputView.swift */,
+				5FEF500325A9E02B00328161 /* RightDropdownInputView.swift */,
 				5F19362F258E702000D406FA /* InputView.xib */,
 			);
 			path = "Input View";
@@ -478,6 +518,50 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		5FEF4FF225A9C06F00328161 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5FEF501C25AA1E4800328161 /* Notifications */,
+				5FEF500825AA1A6000328161 /* Report */,
+				5FEF4FF325A9C0C600328161 /* Receipt */,
+				5F0BBCCD25A8C27A00B5951F /* Dashboard */,
+				5F577F7625966B7B0039124B /* Incomes */,
+				5F593DC425961A3500CEA848 /* Bank Accounts(Card) */,
+				5F0532DD2593D4F8009457E4 /* More */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5FEF4FF325A9C0C600328161 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				5FEF4FF425A9C17800328161 /* Receipt.storyboard */,
+				5FEF4FF925A9C56500328161 /* ReceiptContainerViewController.swift */,
+				5FEF4FFE25A9C58C00328161 /* ReceiptListViewController.swift */,
+				5FEF503725AA34DD00328161 /* AddReceiptViewController.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		5FEF500825AA1A6000328161 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				5FEF500925AA1A7D00328161 /* Report.storyboard */,
+				5FEF500F25AA1BA100328161 /* ReportContainerViewController.swift */,
+				5FEF501725AA1BC500328161 /* AddReportViewController.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		5FEF501C25AA1E4800328161 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5FEF501D25AA1E5800328161 /* Notifications.storyboard */,
+				5FEF502525AA1ED100328161 /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		D3F668AAE3EEFC948E8C4E9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,7 +687,10 @@
 				5F5F6B512597929900D90EF4 /* TitleView.xib in Resources */,
 				5F18A89B258671B40042F62E /* LaunchScreen.storyboard in Resources */,
 				5F0532DF2593D50B009457E4 /* More.storyboard in Resources */,
+				5FEF4FF525A9C17800328161 /* Receipt.storyboard in Resources */,
 				5F0532D42593C333009457E4 /* Home.storyboard in Resources */,
+				5F0BBCD225A8C30B00B5951F /* Dashboard.storyboard in Resources */,
+				5FEF500A25AA1A7D00328161 /* Report.storyboard in Resources */,
 				5F18A8C8258686D40042F62E /* Colors.xcassets in Resources */,
 				5F18A898258671B40042F62E /* Assets.xcassets in Resources */,
 				5F577F7825966B900039124B /* Incomes.storyboard in Resources */,
@@ -612,6 +699,7 @@
 				5F3A5DEB258A8B7400EB447A /* BigButtonNavBar.xib in Resources */,
 				5F3A5DDC258A7D4A00EB447A /* LoginOption.storyboard in Resources */,
 				5FA8647C259394D400E9C843 /* Localizable.strings in Resources */,
+				5FEF501E25AA1E5800328161 /* Notifications.storyboard in Resources */,
 				5F0532E72593D614009457E4 /* SimpleCardView.xib in Resources */,
 				5F19363C258E79D600D406FA /* Login.storyboard in Resources */,
 				5F193630258E702000D406FA /* InputView.xib in Resources */,
@@ -745,28 +833,38 @@
 			files = (
 				5F604F55258FC5FA00C0EBA1 /* ShadowyCorneredView.swift in Sources */,
 				5F3A5DE1258A7EAC00EB447A /* TopCorneredView.swift in Sources */,
-				5F18A893258671B10042F62E /* ViewController.swift in Sources */,
 				5F593DC625961A6300CEA848 /* BankCardCell.swift in Sources */,
+				5F0BBCE025A8C58F00B5951F /* DashboardListViewController.swift in Sources */,
 				5F3A5DC8258A77CC00EB447A /* UserDefaultsBacked.swift in Sources */,
 				5F593DC0259618D600CEA848 /* CustomButton.swift in Sources */,
 				5F18A88F258671B10042F62E /* AppDelegate.swift in Sources */,
+				5F0BBCE525A8C6E300B5951F /* LineChartCell.swift in Sources */,
 				5F604F2B258FA8CC00C0EBA1 /* RegisterSecondViewController.swift in Sources */,
 				5F604F46258FBE2400C0EBA1 /* LoginOptionViewController.swift in Sources */,
+				5F0BBCEA25A8CE8C00B5951F /* ChartData.swift in Sources */,
 				5F5F6B6025979ED000D90EF4 /* NoBankAccountsViewController.swift in Sources */,
+				5FEF500425A9E02B00328161 /* RightDropdownInputView.swift in Sources */,
 				5F3A5DBE258A72CF00EB447A /* IntroViewController.swift in Sources */,
+				5FEF501025AA1BA100328161 /* ReportContainerViewController.swift in Sources */,
 				5F5F6B7E2597C12400D90EF4 /* IncomeListViewController.swift in Sources */,
 				5F604F62258FCBFE00C0EBA1 /* TableView+Reload.swift in Sources */,
 				5F193635258E73F600D406FA /* InputView.swift in Sources */,
 				5F0532C82593AED9009457E4 /* ViewController+Extension.swift in Sources */,
+				5FEF503825AA34DD00328161 /* AddReceiptViewController.swift in Sources */,
 				5FA86486259395F800E9C843 /* LocalizationManager.swift in Sources */,
+				5F0BBCD825A8C53400B5951F /* DashboarContainerViewController.swift in Sources */,
 				5F604F5A258FC62600C0EBA1 /* BankSelectViewController.swift in Sources */,
 				5F93EB5A258A8FCA0003CE1E /* UIResponder+ParenVC.swift in Sources */,
+				5FEF4FFF25A9C58C00328161 /* ReceiptListViewController.swift in Sources */,
 				5F0532EC2593D888009457E4 /* SimpleCardView.swift in Sources */,
 				5F59100F2594E9B2007C3086 /* MoreViewController.swift in Sources */,
 				5F3A5DB9258A722000EB447A /* SegueID.swift in Sources */,
+				5FEF4FFA25A9C56500328161 /* ReceiptContainerViewController.swift in Sources */,
 				5F5F6B722597BD2A00D90EF4 /* CommonTableViewCell.swift in Sources */,
+				5FEF502625AA1ED100328161 /* NotificationsViewController.swift in Sources */,
 				5F593DCB25961CAC00CEA848 /* BankCardViewController.swift in Sources */,
 				5F18A891258671B10042F62E /* SceneDelegate.swift in Sources */,
+				5FEF501825AA1BC500328161 /* AddReportViewController.swift in Sources */,
 				5F3A5DF1258A8D4C00EB447A /* CustomNavigationBarVC.swift in Sources */,
 				5F3A5DD3258A7B6200EB447A /* RoundedButton.swift in Sources */,
 				5F18A8C3258686300042F62E /* UIAppearance.swift in Sources */,
@@ -970,17 +1068,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7L6WT5CBQT;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ulkhan.Say-az";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.application.Say-az";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -990,17 +1092,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7L6WT5CBQT;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ulkhan.Say-az";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.application.Say-az";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

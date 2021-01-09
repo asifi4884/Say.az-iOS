@@ -58,6 +58,7 @@ import UIKit
 
             self.parentViewController?.showAlert(with: "", preferredStyle: .actionSheet, actions: actions, completion: { (index, action) in
                 if action.style != .cancel {
+                    self.filterBtn.setTitle(self.list[index], for: .normal)
                     self.filterAction(index)
                 }
             })

@@ -43,13 +43,14 @@ class TopBarView: UIView, UITextFieldDelegate {
     }
 
     @IBAction func phoneBtnTapped() {
-        phoneNumAction()
+        if let phoneNumAction = phoneNumAction {
+            phoneNumAction()
+        }
     }
 
     @IBAction func notifBtnTapped() {
-        if let notifAction = notifAction {
-            notifAction()
-        }
+        let notifVC = NotificationsViewController().initialize(fromSb: .notif)!
+        parentViewController?.navigationController?.pushViewController(notifVC, animated: true)
 
     }
 }

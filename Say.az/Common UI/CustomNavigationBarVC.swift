@@ -30,7 +30,7 @@ class CustomNavigationBarVC: UIViewController {
     }
     
     func setTitle(_ string: String) {
-        
+       
 
         guard let navController = self.navigationController else { return }
         for view in navController.navigationBar.subviews {

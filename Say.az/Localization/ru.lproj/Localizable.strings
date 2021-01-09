@@ -6,97 +6,163 @@
   
 */
 
-//------------------------------------------------------------------------
-//Intro screen titles
-"intro.top.title.0" = "Yeni və sadə!";
-"intro.subtitle.0" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+// ------------------------------------------------ - - -------------------------
+// Заголовки заставок
+"intro.top.title.0" = "Новое и простое!";
+"intro.subtitle.0" = "Lorem ipsum dolor sit amet, conctetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
-"intro.top.title.1" = "Daha rahat!";
-"intro.subtitle.1" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+"intro.top.title.1" = "Удобнее!";
+"intro.subtitle.1" = "Lorem ipsum dolor sit amet, conctetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
-"intro.top.title.2" = "YDaha sərfəli!";
-"intro.subtitle.2" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
+"intro.top.title.2" = "Выгоднее!";
+"intro.subtitle.2" = "Lorem ipsum dolor sit amet, conctetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
-"skip.button.title" = "ПРОПУСКАТЬ";
+"skip.button.title" = "ПРОПУСТИТЬ";
 
-//------------------------------------------------------------------------
-//LoginOption screen titles
-"login.option.title" = "вход";
-"login.option.subtitle" = "ASAN imza vasitəsəilə və ya asan pass ilə rahatlıqla platformaya daxil ola bilərsiniz.";
-"asan.pass.button.title" = "Asan Pass";
+// ------------------------------------------------ - - -------------------------
+// Заголовки экранов LoginOption
+"login.option.title" = "логин";
+"login.option.subtitle" = "Вы можете легко получить доступ к платформе с помощью подписи ASAN или с помощью простого прохода.";
+"asan.pass.button.title" = "Пропуск ASAN";
 
-//------------------------------------------------------------------------
-//Asan Login
-"asan.login.title" = "Asan login";
-"asan.login.subtitle" = "Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin.";
-"login.button.title" = "Log in";
-"info.button.title" = "Info →";
-
-
-//------------------------------------------------------------------------
-//Register first screen titles
-"register.first.title" = "Qeydiyyat";
-"register.first.subtitle" = "Qeydiyyatdan keçmək, zəhmət olmasa, asan nömrənizi daxil edin.";
-"next.button.title" = "Növbəti";
-
-//------------------------------------------------------------------------
-//Register second screen titles
-"upload.photo.title" = "Şəkil yüklə";
-
-//------------------------------------------------------------------------
-//Bank account(card) screen titles
-"bank.select.title" = "Bank hesabı aç";
-"bank.select.subtitle" = "Bu bölmədə istənilən bankda hesab açaraq kart sifarişi göndərə bilərsiniz.";
-"send.button.title" = "Göndər";
+// ------------------------------------------------ - - -------------------------
+// Вход в Asan
+"asan.login.title" = "Вход в систему ASAN";
+"asan.login.subtitle" = "Введите свой номер ASAN и идентификатор пользователя.";
+"login.button.title" = "Войти";
+"info.button.title" = "Информация →";
 
 
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-//Input text placeholders
-"phone.no.placeholder" = "Phone";
-"person.id.placeholder" = "İstifadəçi ID-si";
-"name.placeholder" = "Ad";
-"surname.placeholder" = "Soyad";
-"asan.no.placeholder" = "Asan no";
-"pin.no.placeholder" = "FİN";
-"speciality.placeholder" = "Fəaliyyət növü";
-"choose.bank.placeholder" = "Bank seç";
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+// ------------------------------------------------ - - -------------------------
+// Регистрируем заголовки первого экрана
+"register.first.title" = "Зарегистрироваться";
+"register.first.subtitle" = "Зарегистрируйтесь, введите свой простой номер.";
+"next.button.title" = "Далее";
+
+// ------------------------------------------------ - - -------------------------
+// Регистрируем заголовки второго экрана
+"upload.photo.title" = "Загрузить изображение";
+
+// ------------------------------------------------ - - -------------------------
+// Заголовки экранов банковского счета (карты)
+"bank.select.title" = "Открыть банковский счет";
+"bank.select.subtitle" = "В этом разделе вы можете открыть банковский счет и отправить распоряжение картой.";
+"send.button.title" = "Отправить";
 
 
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-//Shared Button titles
-"back.button.title" = "Back";
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _- _- _-_-_-_-_-_-_-_-_-_-_-_-_
+// Ввод текстовых заполнителей
+"phone.no.placeholder" = "Телефон";
+"person.id.placeholder" = "ID пользователя";
+"name.placeholder" = "Объявление";
+"surname.placeholder" = "Фамилия";
+"asan.no.placeholder" = "Асан нет";
+"pin.no.placeholder" = "FIN";
+"speciality.placeholder" = "Вид деятельности";
+"choose.bank.placeholder" = "Выбрать банк";
+"card.no.placeholder" = "Номер карты";
+"card.expire.date.placeholder" = "Срок действия";
+"card.cvc.cvv.placeholder" = "CVC \ CVV";
+"search.placeholder" = "Искать ...";
+"receipt.type.placeholder" = "Тип квитанции";
+"voen.placeholder" = "Голос";
+"amount.placeholder" = "Сумма";
+"name.of.company.placeholder" = "Название компании";
+"period.placeholder" = "Period";
+"report.type.placeholder" = "Тип отчета";
+"year.placeholder" = "Год";
+"quarter.placeholder" = "Ежеквартально";
+"incomes.during.period.placeholder" = "доходы за период";
+"tax.amount.placeholder" = "сумма налога";
+"incomes.placeholder" = "Доходы";
+"expense.placeholder" = "Расходы";
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _- _- _-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _- _- _-_-_-_-_-_-_-_-_-_-_-_-_
+// Заголовки общих кнопок
+"back.button.title" = "Назад";
 "register.button.arrow.title" = "регистр →";
 "register.button.title" = "регистр →";
-"cancel.button.title" = "Cancel";
-"yes.button.title" = "Yes";
-"add.card.button.title" = "Yenisini əlavə et";
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+"cancel.button.title" = "Отменить";
+"yes.button.title" = "Да";
+"add.card.button.title" = "Добавить новый";
+"add.button.title" = "Добавить";
+"send.button.title" = "Отправить";
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _- _- _-_-_-_-_-_-_-_-_-_-_-_-_
 
 
-//------------------------------------------------------------------------
-//More(Profile-Settings) titles
-"profile.info.title" = "Profile information";
-"settings.title" = "Settings";
-"other.title" = "Others";
+// ------------------------------------------------ - - -------------------------
+// Дополнительные заголовки (Профиль-Настройки)
+"profile.info.title" = "Информация о профиле";
+"settings.title" = "Настройки";
+"other.title" = "Другое";
 
-"tax.invoices.title" = "My tax invoices";
-"bank.accounts.title" = "My bank accounts";
-"write.mail.to.ministry.title" = "Vergilər Nazirliyinə mail yaz";
+"tax.invoices.title" = "Мои налоговые счета";
+"bank.accounts.title" = "Мои банковские счета";
+"write.mail.to.ministry.title" = "Написать письмо в Министерство налогов";
 
-"language.title" = "Language";
-"ui.appearance.mode" = "Mode";
+"language.title" = "Язык";
+"ui.appearance.mode" = "Режим";
 
-"about.app.title" = "Tətbiq haqqında məlumat";
-"delete.profile.title" = "Delete profile";
+"about.app.title" = "Информация о приложении";
+"delete.profile.title" = "Удалить профиль";
+"delete.profile.alert.title" = "Вы действительно хотите удалить эту учетную запись?";
 
-//------------------------------------------------------------------------
-//Language alert(popup) titles
-"ru.lang.title" = "Russian ✓";
-"az.lang.title" = "Azerbaijan";
-"en.lang.title" = "English";
+// ------------------------------------------------ - - -------------------------
+// Заголовки предупреждений о языке (всплывающих окон)
+"ru.lang.title" = "Русский ✓";
+"az.lang.title" = "Азербайджанский";
+"en.lang.title" = "Английский";
+"current.lang" = "Русский";
 
-//------------------------------------------------------------------------
-//Mode  titles
-"dark.appearance.title" = "Dark";
-"light.appearance.title" = "Light";
+// ------------------------------------------------ - - -------------------------
+// Названия режимов
+"dark.appearance.title" = "Темный";
+"light.appearance.title" = "Свет";
+
+// ------------------------------------------------ - - -------------------------
+// Добавляем названия банковских счетов
+"add.new.bank.account.title" = "Добавить учетную запись";
+
+// ------------------------------------------------ - - -------------------------
+// Заголовки экрана доходов
+"no.income.title" = "Добавьте банковский счет, чтобы увидеть свой доход.";
+"income.title" = "Доходы";
+"income.option.year.title" = "Ежегодно";
+"income.option.month.title" = "Ежемесячно";
+
+
+
+// ------------------------------------------------ --------------------------
+// Заголовки экрана панели инструментов
+"no.dashboard.title" = "Ups... Ничего не показать.";
+"dashboard.title" = "Панель управления";
+"dashboard.option.year.title" = "Ежегодно";
+"dashboard.option.month.title" = "Ежемесячно";
+
+// ------------------------------------------------ --------------------------
+// Заголовки экрана квитанции (Qaime)
+"no.receipt.title" = "Ибп ... Ничего не показать.";
+"receipt.title" = "Квитанция";
+"receipt.option.coming.title" = "Скоро";
+"receipt.option.sent.title" = "Отправлено";
+
+// ------------------------------------------------ --------------------------
+// Добавляем заголовки экрана квитанции (Qaime)
+"add.receipt.title" = "Отправить квитанцию";
+"add.receipt.subtitle" = "Заполните поля ниже, чтобы отправить квитанцию";
+"receipt.with.voen.title" = "С Воен";
+"receipt.without.voen.title" = "Без Воен";
+
+// ------------------------------------------------- ---------------------------
+// Указываем заголовки экрана
+"report.title" = "Отчет";
+"add.report.subtitle" = "Заполните поля ниже, чтобы отправить отчет";
+"report.type.0" = "Текущая налоговая справка";
+"report.type.1" = "одно объявление";
+"report.type.2" = "Решение по налогу на прибыль";
+
+// ------------------------------------------------- ---------------------------
+// Имена экранов уведомлений
+"notif.title" = "Уведомления";

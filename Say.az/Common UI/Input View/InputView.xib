@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,6 +13,7 @@
             <connections>
                 <outlet property="containerView" destination="iN0-l3-epB" id="9LC-h8-URg"/>
                 <outlet property="iconImgView" destination="Nfi-kr-skg" id="0Db-Hb-vCV"/>
+                <outlet property="rightSelectionBtn" destination="Vp7-Y0-d5D" id="Cfc-nB-EYE"/>
                 <outlet property="roundedView" destination="Dug-iA-SCa" id="Xjd-go-dOf"/>
                 <outlet property="titleContainer" destination="IV3-P4-Z1A" id="PJz-g8-wsB"/>
                 <outlet property="titleLbl" destination="9rC-fT-CSx" id="fHj-D6-dLx"/>
@@ -26,27 +28,41 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-iA-SCa" userLabel="CorneredBGView">
                     <rect key="frame" x="2" y="4" width="311" height="54"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2D-MT-R4X">
-                            <rect key="frame" x="16" y="4" width="247" height="46"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-kr-skg">
-                            <rect key="frame" x="279" y="19" width="16" height="16"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-jd-qA1">
+                            <rect key="frame" x="16" y="4" width="279" height="46"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2D-MT-R4X">
+                                    <rect key="frame" x="0.0" y="0.0" width="259" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp7-Y0-d5D">
+                                    <rect key="frame" x="261" y="0.0" width="0.0" height="46"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <state key="normal" title="AZN">
+                                        <color key="titleColor" name="MainButtonColorActive"/>
+                                    </state>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-kr-skg">
+                                    <rect key="frame" x="263" y="15" width="16" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="8r4-hF-XZy"/>
+                                        <constraint firstAttribute="width" constant="16" id="wAB-lg-y6n"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="16" id="8r4-hF-XZy"/>
-                                <constraint firstAttribute="width" constant="16" id="wAB-lg-y6n"/>
+                                <constraint firstItem="Vp7-Y0-d5D" firstAttribute="height" secondItem="sC2-jd-qA1" secondAttribute="height" id="6UZ-P4-gt4"/>
+                                <constraint firstItem="F2D-MT-R4X" firstAttribute="height" secondItem="sC2-jd-qA1" secondAttribute="height" id="eY6-he-Ib9"/>
                             </constraints>
-                        </imageView>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="F2D-MT-R4X" firstAttribute="leading" secondItem="Dug-iA-SCa" secondAttribute="leading" constant="16" id="LPj-4U-kJ8"/>
-                        <constraint firstItem="Nfi-kr-skg" firstAttribute="centerY" secondItem="Dug-iA-SCa" secondAttribute="centerY" id="PEO-Vf-iEt"/>
-                        <constraint firstAttribute="bottom" secondItem="F2D-MT-R4X" secondAttribute="bottom" constant="4" id="TO9-K1-msl"/>
-                        <constraint firstItem="Nfi-kr-skg" firstAttribute="leading" secondItem="F2D-MT-R4X" secondAttribute="trailing" constant="16" id="XHw-Uh-hiK"/>
-                        <constraint firstAttribute="trailing" secondItem="Nfi-kr-skg" secondAttribute="trailing" constant="16" id="gt1-qN-m3I"/>
-                        <constraint firstItem="F2D-MT-R4X" firstAttribute="top" secondItem="Dug-iA-SCa" secondAttribute="top" constant="4" id="h5X-zi-7kv"/>
+                        <constraint firstAttribute="trailing" secondItem="sC2-jd-qA1" secondAttribute="trailing" constant="16" id="4ay-xt-YG3"/>
+                        <constraint firstItem="sC2-jd-qA1" firstAttribute="top" secondItem="Dug-iA-SCa" secondAttribute="top" constant="4" id="4vi-qV-0Td"/>
+                        <constraint firstAttribute="bottom" secondItem="sC2-jd-qA1" secondAttribute="bottom" constant="4" id="kyu-7q-WZ0"/>
+                        <constraint firstItem="sC2-jd-qA1" firstAttribute="leading" secondItem="Dug-iA-SCa" secondAttribute="leading" constant="16" id="lpu-Mz-BXg"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV3-P4-Z1A">

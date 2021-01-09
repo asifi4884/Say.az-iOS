@@ -67,7 +67,7 @@
                                 <rect key="frame" x="84" y="13.5" width="350" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-dQ-8vT">
-                                        <rect key="frame" x="16" y="13" width="92.5" height="36"/>
+                                        <rect key="frame" x="16" y="13" width="118" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no.photo" translatesAutoresizingMaskIntoConstraints="NO" id="ih8-9Q-2bq">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -77,16 +77,16 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AbV-0o-Xvs">
-                                                <rect key="frame" x="48" y="2" width="44.5" height="32.5"/>
+                                                <rect key="frame" x="48" y="2" width="70" height="32.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5P-2I-0yc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="16.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jhon Alean" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5P-2I-0yc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-k6-IKn">
-                                                        <rect key="frame" x="0.0" y="18.5" width="44.5" height="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4314324" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-k6-IKn">
+                                                        <rect key="frame" x="0.0" y="18.5" width="70" height="14"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" name="FadedTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -96,16 +96,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kcq-97-70S">
-                                        <rect key="frame" x="289.5" y="15" width="44.5" height="32.5"/>
+                                        <rect key="frame" x="273.5" y="15" width="60.5" height="32.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-UH-QUa">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="16.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-UH-QUa">
+                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <color key="textColor" name="MainButtonColorActive"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelirler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-rZ-y6A">
-                                                <rect key="frame" x="0.0" y="18.5" width="44.5" height="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.06.06" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-rZ-y6A">
+                                                <rect key="frame" x="0.0" y="18.5" width="60.5" height="14"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                 <color key="textColor" name="FadedTitleColor"/>
                                                 <nil key="highlightedColor"/>
@@ -136,6 +136,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outletCollection property="leftActionBtns" destination="9BT-EL-fcI" collectionClass="NSMutableArray" id="PjC-jV-PP7"/>
                 <outletCollection property="leftActionBtns" destination="nGF-zN-dvu" collectionClass="NSMutableArray" id="LRW-hZ-ijF"/>

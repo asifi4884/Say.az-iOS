@@ -6,112 +6,167 @@
 
 */
 
-//------------------------------------------------------------------------
-//Intro screen titles
-"intro.top.title.0" = "Yeni və sadə!";
+// --------------------------------------------------------------------------
+// Intro screen titles
+"intro.top.title.0" = "New and simple!";
 "intro.subtitle.0" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
-"intro.top.title.1" = "Daha rahat!";
+"intro.top.title.1" = "More convenient!";
 "intro.subtitle.1" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
-"intro.top.title.2" = "YDaha sərfəli!";
+"intro.top.title.2" = "More profitable!";
 "intro.subtitle.2" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit cras dignissim amet sit in arcu ullamcorper ultricies.";
 
 "skip.button.title" = "SKIP";
 
-//------------------------------------------------------------------------
-//LoginOption screen titles
-"login.option.title" = "вход";
-"login.option.subtitle" = "ASAN imza vasitəsəilə və ya asan pass ilə rahatlıqla platformaya daxil ola bilərsiniz.";
-"asan.pass.button.title" = "Asan Pass";
+// --------------------------------------------------------------------------
+// LoginOption screen titles
+"login.option.title" = "login";
+"login.option.subtitle" = "You can easily access the platform via ASAN signature or with an easy pass.";
+"asan.pass.button.title" = "ASAN Pass";
 
-//------------------------------------------------------------------------
-//Asan Login
-"asan.login.title" = "Asan login";
-"asan.login.subtitle" = "Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin.";
+// --------------------------------------------------------------------------
+// Asan Login
+"asan.login.title" = "ASAN login";
+"asan.login.subtitle" = "Please enter your ASAN number and user ID.";
 "login.button.title" = "Log in";
 "info.button.title" = "Info →";
 
 
-//------------------------------------------------------------------------
-//Register first screen titles
-"register.first.title" = "Qeydiyyat";
-"register.first.subtitle" = "Qeydiyyatdan keçmək, zəhmət olmasa, asan nömrənizi daxil edin.";
-"next.button.title" = "Növbəti";
+// --------------------------------------------------------------------------
+// Register first screen titles
+"register.first.title" = "Register";
+"register.first.subtitle" = "Register, please enter your easy number.";
+"next.button.title" = "Next";
 
-//------------------------------------------------------------------------
-//Register second screen titles
-"upload.photo.title" = "Şəkil yüklə";
+// --------------------------------------------------------------------------
+// Register second screen titles
+"upload.photo.title" = "Upload Image";
 
-//------------------------------------------------------------------------
-//Bank account(card) screen titles
-"bank.select.title" = "Bank hesabı aç";
-"bank.select.subtitle" = "Bu bölmədə istənilən bankda hesab açaraq kart sifarişi göndərə bilərsiniz.";
-"send.button.title" = "Göndər";
+// --------------------------------------------------------------------------
+// Bank account (card) screen titles
+"bank.select.title" = "Open a bank account";
+"bank.select.subtitle" = "In this section you can open a bank account and send a card order.";
+"send.button.title" = "Send";
 
 
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-//Input text placeholders
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _-_-_-_-_-_-_-_-_-_-_-_-_
+// Input text placeholders
 "phone.no.placeholder" = "Phone";
-"person.id.placeholder" = "İstifadəçi ID-si";
+"person.id.placeholder" = "User ID";
 "name.placeholder" = "Ad";
-"surname.placeholder" = "Soyad";
+"surname.placeholder" = "Surname";
 "asan.no.placeholder" = "Asan no";
-"pin.no.placeholder" = "FİN";
-"speciality.placeholder" = "Fəaliyyət növü";
-"choose.bank.placeholder" = "Bank seç";
+"pin.no.placeholder" = "FIN";
+"speciality.placeholder" = "Type of activity";
+"choose.bank.placeholder" = "Choose Bank";
 "card.no.placeholder" = "Card no";
 "card.expire.date.placeholder" = "Expire date";
-"card.cvc.cvv.placeholder" = "CVC\CVV";
-"search.placeholder" = "Axtar...";
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+"card.cvc.cvv.placeholder" = "CVC \ CVV";
+"search.placeholder" = "Search ...";
+"receipt.type.placeholder" = "Type of receipt";
+"voen.placeholder" = "Voen";
+"amount.placeholder" = "Amount";
+"name.of.company.placeholder" = "Name of company";
+"period.placeholder" = "Period";
+"report.type.placeholder" = "Report type";
+"year.placeholder" = "Year";
+"quarter.placeholder" = "Quarter";
+"incomes.during.period.placeholder" = "Incomes during the period";
+"tax.amount.placeholder" = "Amount of tax";
+"incomes.placeholder" = "Incomes";
+"expenses.placeholder" = "Expenses";
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-//Shared Button titles
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _-_-_-_-_-_-_-_-_-_-_-_-_
+// Shared Button titles
 "back.button.title" = "Back";
-"register.button.arrow.title" = "регистр →";
-"register.button.title" = "регистр →";
+"register.button.arrow.title" = "register →";
+"register.button.title" = "register →";
 "cancel.button.title" = "Cancel";
 "yes.button.title" = "Yes";
-"add.card.button.title" = "Yenisini əlavə et";
+"add.card.button.title" = "Add New";
 "add.button.title" = "Add";
+"send.button.title" = "Send";
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _-_-_-_-_-_-_-_-_-_-_-_-_
 
-//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-
-//------------------------------------------------------------------------
-//More(Profile-Settings) titles
+// --------------------------------------------------------------------------
+// More (Profile-Settings) titles
 "profile.info.title" = "Profile information";
 "settings.title" = "Settings";
 "other.title" = "Others";
 
 "tax.invoices.title" = "My tax invoices";
 "bank.accounts.title" = "My bank accounts";
-"write.mail.to.ministry.title" = "Vergilər Nazirliyinə mail yaz";
+"write.mail.to.ministry.title" = "Write mail to the Ministry of Taxes";
 
 "language.title" = "Language";
 "ui.appearance.mode" = "Mode";
 
-"about.app.title" = "Tətbiq haqqında məlumat";
+"about.app.title" = "Application Information";
 "delete.profile.title" = "Delete profile";
 "delete.profile.alert.title" = "Are you sure to delete this account?";
 
-//------------------------------------------------------------------------
-//Language alert(popup) titles
+// --------------------------------------------------------------------------
+// Language alert (popup) titles
 "ru.lang.title" = "Russian";
 "az.lang.title" = "Azerbaijan";
 "en.lang.title" = "English ✓";
+"current.lang" = "English";
 
-//------------------------------------------------------------------------
-//Mode  titles
+// --------------------------------------------------------------------------
+// Mode titles
 "dark.appearance.title" = "Dark";
 "light.appearance.title" = "Light";
 
-//------------------------------------------------------------------------
-//Add bank account  titles
-"add.new.bank.account.title" = "Hesab əlavə et";
+// --------------------------------------------------------------------------
+// Add bank account titles
+"add.new.bank.account.title" = "Add Account";
 
-//------------------------------------------------------------------------
-//Incomes screen titles
-"no.income.title" = "Gəlirlərinizi görmək üçün bank hesabı əlavə edin.";
+// --------------------------------------------------------------------------
+// Incomes screen titles
+"no.income.title" = "Add a bank account to see your income.";
+"income.title" = "Incomes";
+"income.option.year.title" = "Yearly";
+"income.option.month.title" = "Monthly";
+
+
+
+// --------------------------------------------------------------------------
+// Dashboard screen titles
+"no.dashboard.title" = "Ups... Nothing to show.";
+"dashboard.title" = "Dasboard";
+"dashboard.option.year.title" = "Yearly";
+"dashboard.option.month.title" = "Monthly";
+
+// --------------------------------------------------------------------------
+// Receipt(Qaime) screen titles
+"no.receipt.title" = "Ups... Nothing to show.";
+"receipt.title" = "Receipt";
+"receipt.option.coming.title" = "Coming";
+"receipt.option.sent.title" = "Sent";
+
+// --------------------------------------------------------------------------
+// Add Receipt(Qaime) screen titles
+"add.receipt.title" = "Send Receipt";
+"add.receipt.subtitle" = "Fill fields below to send receipt";
+"receipt.with.voen.title" = "With Voen";
+"receipt.without.voen.title" = "Without Voen";
+
+// ------------------------------------------------- ---------------------------
+// Report screen titles
+"report.title" = "Report";
+"add.report.subtitle" = "Fill fields below to send report";
+"report.type.0" = "Current tax reference";
+"report.type.1" = "Single declaration";
+"report.type.2" = "Income tax return";
+
+// ------------------------------------------------- ---------------------------
+// Notifications screen titles
+"notif.title" = "Notifications";
+
+
+
+

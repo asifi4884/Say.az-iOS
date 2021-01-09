@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bank Card View Controller-->
+        <scene sceneID="hgo-dG-qoc">
+            <objects>
+                <viewController storyboardIdentifier="BankCardViewController" id="vU1-pP-0dm" customClass="BankCardViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L79-hg-hN0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Wx-JY-pc5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="bank.card.cell" rowHeight="90" id="1ME-A2-4fG" customClass="BankCardCell" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ME-A2-4fG" id="Nge-kl-5S0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ATN-U1-j4e">
+                                                    <rect key="frame" x="15" y="8" width="384" height="74"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NY-3Z-Ebc" customClass="CustomButton" customModule="Say_az" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="21" width="32" height="32"/>
+                                                            <color key="backgroundColor" name="CellBgColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="32" id="HWf-wB-8I4"/>
+                                                                <constraint firstAttribute="height" constant="32" id="qkn-4R-554"/>
+                                                            </constraints>
+                                                            <state key="normal" image="delete"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" name="FadedTitleColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="deleteBtnTapped" destination="1ME-A2-4fG" eventType="touchUpInside" id="ZNM-gy-FOt"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h59-Ek-Xbw" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
+                                                            <rect key="frame" x="42" y="6" width="342" height="62"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="62" id="B7c-we-ziV"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ATN-U1-j4e" firstAttribute="top" secondItem="Nge-kl-5S0" secondAttribute="top" constant="8" id="5qK-g0-oxA"/>
+                                                <constraint firstItem="ATN-U1-j4e" firstAttribute="leading" secondItem="Nge-kl-5S0" secondAttribute="leading" constant="15" id="BOK-AI-OHI"/>
+                                                <constraint firstAttribute="bottom" secondItem="ATN-U1-j4e" secondAttribute="bottom" constant="8" id="KPl-OF-XNG"/>
+                                                <constraint firstAttribute="trailing" secondItem="ATN-U1-j4e" secondAttribute="trailing" constant="15" id="h66-Y2-uvF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="h59-Ek-Xbw" id="r0e-Mm-Znr"/>
+                                            <outlet property="deleteBtn" destination="7NY-3Z-Ebc" id="t1X-tg-hJ4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="add.card.cell" rowHeight="90" id="uwb-IV-Z8y" customClass="AddAccountCell" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="118" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uwb-IV-Z8y" id="4aj-Gi-buF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C9M-8u-ZxO">
+                                                    <rect key="frame" x="15" y="8" width="384" height="74"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-2c-5iL" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="6" width="384" height="62"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="62" id="f9h-2t-mUR"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="icon" value="plus.icon"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="add.card.button.title"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="C9M-8u-ZxO" firstAttribute="top" secondItem="4aj-Gi-buF" secondAttribute="top" constant="8" id="Ckr-TL-a1J"/>
+                                                <constraint firstAttribute="bottom" secondItem="C9M-8u-ZxO" secondAttribute="bottom" constant="8" id="J4O-ou-gsL"/>
+                                                <constraint firstItem="C9M-8u-ZxO" firstAttribute="leading" secondItem="4aj-Gi-buF" secondAttribute="leading" constant="15" id="TaW-r3-DMK"/>
+                                                <constraint firstAttribute="trailing" secondItem="C9M-8u-ZxO" secondAttribute="trailing" constant="15" id="cYi-pb-iTN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="simpleCardView" destination="zeo-2c-5iL" id="oZC-Xr-ECN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GU3-bn-fjH"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="3Wx-JY-pc5" firstAttribute="top" secondItem="GU3-bn-fjH" secondAttribute="top" id="9NW-dG-lJP"/>
+                            <constraint firstItem="GU3-bn-fjH" firstAttribute="bottom" secondItem="3Wx-JY-pc5" secondAttribute="bottom" id="Sx2-ly-w8d"/>
+                            <constraint firstItem="3Wx-JY-pc5" firstAttribute="leading" secondItem="GU3-bn-fjH" secondAttribute="leading" id="nfG-e6-EAP"/>
+                            <constraint firstItem="3Wx-JY-pc5" firstAttribute="trailing" secondItem="GU3-bn-fjH" secondAttribute="trailing" id="oAC-t3-85N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3Wx-JY-pc5" id="xh1-jP-bAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuK-nS-A4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="-352"/>
+        </scene>
+        <!--Add Account View Controller-->
+        <scene sceneID="FMx-um-jgf">
+            <objects>
+                <viewController storyboardIdentifier="AddAccountViewController" id="VRz-ZE-00C" customClass="AddAccountViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ew0-e2-GZK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r39-Kz-6Zg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21d-z1-tgf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="qPX-Qe-vNo">
+                                                <rect key="frame" x="15" y="40" width="384" height="148"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-hq-kec" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="fMc-cm-AgO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.no.placeholder"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="By6-Xo-JlE">
+                                                        <rect key="frame" x="0.0" y="88" width="384" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-CI-mTW" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="184" height="60"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="QC1-Al-IPk"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.expire.date.placeholder"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7by-vP-wRH" customClass="InputView" customModule="Say_az" customModuleProvider="target">
+                                                                <rect key="frame" x="200" y="0.0" width="184" height="60"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="YYr-rA-z3o"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.cvc.cvv.placeholder"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qPX-Qe-vNo" secondAttribute="trailing" constant="15" id="3t0-cJ-uZj"/>
+                                            <constraint firstAttribute="bottom" secondItem="qPX-Qe-vNo" secondAttribute="bottom" constant="16" id="E9j-j0-Ago"/>
+                                            <constraint firstItem="qPX-Qe-vNo" firstAttribute="leading" secondItem="21d-z1-tgf" secondAttribute="leading" constant="15" id="cfc-hb-yd0"/>
+                                            <constraint firstItem="qPX-Qe-vNo" firstAttribute="top" secondItem="21d-z1-tgf" secondAttribute="top" constant="40" id="r1Z-UT-t7R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="21d-z1-tgf" firstAttribute="top" secondItem="r39-Kz-6Zg" secondAttribute="top" id="XLT-kL-fLd"/>
+                                    <constraint firstAttribute="trailing" secondItem="21d-z1-tgf" secondAttribute="trailing" id="ZQp-Un-PI5"/>
+                                    <constraint firstItem="21d-z1-tgf" firstAttribute="leading" secondItem="r39-Kz-6Zg" secondAttribute="leading" id="cZL-KX-gmP"/>
+                                    <constraint firstAttribute="bottom" secondItem="21d-z1-tgf" secondAttribute="bottom" id="g9R-ov-fch"/>
+                                    <constraint firstItem="21d-z1-tgf" firstAttribute="width" secondItem="r39-Kz-6Zg" secondAttribute="width" id="k0m-mh-aMD"/>
+                                    <constraint firstItem="21d-z1-tgf" firstAttribute="height" secondItem="r39-Kz-6Zg" secondAttribute="height" priority="250" id="tCL-8y-iKj"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="X8D-Xo-mpx">
+                                <rect key="frame" x="15" y="790" width="384" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYj-Zo-6GC" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="56"/>
+                                        <color key="backgroundColor" name="MainButtonColorActive"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Y2w-Oy-Fte"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Göndər">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="add.button.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addBtnTapped" destination="VRz-ZE-00C" eventType="touchUpInside" id="nOu-jV-xEe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rkz-I4-hbA"/>
+                        <color key="backgroundColor" name="MainBGColor"/>
+                        <constraints>
+                            <constraint firstItem="X8D-Xo-mpx" firstAttribute="top" secondItem="r39-Kz-6Zg" secondAttribute="bottom" constant="12" id="141-lt-Cpa"/>
+                            <constraint firstItem="rkz-I4-hbA" firstAttribute="bottom" secondItem="X8D-Xo-mpx" secondAttribute="bottom" constant="16" id="2Ug-hA-uhA"/>
+                            <constraint firstItem="rkz-I4-hbA" firstAttribute="trailing" secondItem="r39-Kz-6Zg" secondAttribute="trailing" id="YzU-xS-BOz"/>
+                            <constraint firstItem="rkz-I4-hbA" firstAttribute="trailing" secondItem="X8D-Xo-mpx" secondAttribute="trailing" constant="15" id="aF2-9Y-Gdg"/>
+                            <constraint firstItem="r39-Kz-6Zg" firstAttribute="top" secondItem="rkz-I4-hbA" secondAttribute="top" id="e7K-dp-lv1"/>
+                            <constraint firstItem="r39-Kz-6Zg" firstAttribute="leading" secondItem="rkz-I4-hbA" secondAttribute="leading" id="n3M-yR-doO"/>
+                            <constraint firstItem="X8D-Xo-mpx" firstAttribute="leading" secondItem="rkz-I4-hbA" secondAttribute="leading" constant="15" id="pHa-fe-AZd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGO-6K-h7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="-352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="16" height="16"/>
+        <image name="plus.icon" width="24" height="24"/>
+        <namedColor name="CellBgColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FadedTitleColor">
+            <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainButtonColorActive">
+            <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

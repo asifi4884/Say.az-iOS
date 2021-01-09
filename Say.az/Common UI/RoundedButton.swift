@@ -9,13 +9,21 @@ import UIKit
 
 class RoundedButton: UIButton {
     var shadowLayer: CAShapeLayer!
+
+    @IBInspectable var cornerRadius: CGFloat = 14
+    @IBInspectable var isImgTinted: Bool = false
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = 14
+        layer.cornerRadius = cornerRadius
+        if isImgTinted {
+            let img = self.imageView?.image?.withRenderingMode(.alwaysTemplate)
+            self.setImage(img, for: .normal)
+        }
 
+        
         if shadowLayer == nil {
             shadowLayer = CAShapeLayer()
-            shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: 12).cgPath
+            shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
             shadowLayer.fillColor = self.backgroundColor?.cgColor
 
             shadowLayer.shadowColor = UIColor.darkGray.cgColor
