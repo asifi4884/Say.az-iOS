@@ -6,12 +6,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="Say_az" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="iN0-l3-epB" id="9LC-h8-URg"/>
+                <outlet property="errorContainer" destination="Xoc-xd-ChQ" id="gzy-HJ-N0O"/>
+                <outlet property="errorContainerBottom" destination="EgR-kq-6FB" id="gEr-LW-lGz"/>
+                <outlet property="errorbl" destination="YUG-yK-x7c" id="2CY-pu-pNh"/>
                 <outlet property="iconImgView" destination="Nfi-kr-skg" id="0Db-Hb-vCV"/>
                 <outlet property="rightSelectionBtn" destination="Vp7-Y0-d5D" id="Cfc-nB-EYE"/>
                 <outlet property="roundedView" destination="Dug-iA-SCa" id="Xjd-go-dOf"/>
@@ -86,14 +90,36 @@
                         <constraint firstItem="9rC-fT-CSx" firstAttribute="top" secondItem="IV3-P4-Z1A" secondAttribute="top" id="xua-dy-8Va"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xoc-xd-ChQ" userLabel="Error Container">
+                    <rect key="frame" x="2" y="40" width="311" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-yK-x7c">
+                            <rect key="frame" x="8" y="4" width="295" height="12"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YUG-yK-x7c" secondAttribute="bottom" constant="4" id="HhF-EI-Axp"/>
+                        <constraint firstItem="YUG-yK-x7c" firstAttribute="leading" secondItem="Xoc-xd-ChQ" secondAttribute="leading" constant="8" id="Ixi-xq-8kj"/>
+                        <constraint firstItem="YUG-yK-x7c" firstAttribute="top" secondItem="Xoc-xd-ChQ" secondAttribute="top" constant="4" id="MZg-Id-t1l"/>
+                        <constraint firstAttribute="trailing" secondItem="YUG-yK-x7c" secondAttribute="trailing" constant="8" id="Yx0-Yn-QvH"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="rt3-6d-pek"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Dug-iA-SCa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="1Gn-Sj-4Rn"/>
                 <constraint firstAttribute="bottom" secondItem="Dug-iA-SCa" secondAttribute="bottom" constant="2" id="AsP-6x-e2P"/>
+                <constraint firstAttribute="bottom" secondItem="Xoc-xd-ChQ" secondAttribute="bottom" id="EgR-kq-6FB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xoc-xd-ChQ" secondAttribute="trailing" constant="2" id="JSQ-EG-skR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IV3-P4-Z1A" secondAttribute="trailing" constant="18" id="Mpy-bS-87e"/>
                 <constraint firstItem="IV3-P4-Z1A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Prd-va-l8t"/>
+                <constraint firstItem="Xoc-xd-ChQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="QT8-yf-qRj"/>
                 <constraint firstAttribute="trailing" secondItem="Dug-iA-SCa" secondAttribute="trailing" constant="2" id="S2S-qU-m5d"/>
                 <constraint firstItem="IV3-P4-Z1A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="VGW-oa-6KO"/>
                 <constraint firstItem="Dug-iA-SCa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="nA2-wh-u8y"/>
@@ -109,5 +135,8 @@
         <namedColor name="MainButtonColorActive">
             <color red="0.043000001460313797" green="0.49000000953674316" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

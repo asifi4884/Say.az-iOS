@@ -60,9 +60,12 @@
 "pin.no.placeholder" = "FIN";
 "speciality.placeholder" = "Type of activity";
 "choose.bank.placeholder" = "Choose Bank";
-"card.no.placeholder" = "Card no";
+"card.no.placeholder" = "Card number";
+"card.no.error" = "Card number is not in the correct format";
 "card.expire.date.placeholder" = "Expire date";
+"card.expire.date.error" = "Expire date is not in the correct format";
 "card.cvc.cvv.placeholder" = "CVC \ CVV";
+"card.cvc.cvv.error" = "CVC \ CVV is not in the correct format";
 "search.placeholder" = "Search ...";
 "receipt.type.placeholder" = "Type of receipt";
 "voen.placeholder" = "Voen";
@@ -108,6 +111,8 @@
 "about.app.title" = "Application Information";
 "delete.profile.title" = "Delete profile";
 "delete.profile.alert.title" = "Are you sure to delete this account?";
+"logout.profile.title" = "Log out";
+"logout.profile.alert.title" = "Are you sure to log out?";
 
 // --------------------------------------------------------------------------
 // Language alert (popup) titles

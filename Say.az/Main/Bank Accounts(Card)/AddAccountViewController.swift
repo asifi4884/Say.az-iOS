@@ -9,6 +9,25 @@ import UIKit
 
 class AddAccountViewController: CustomNavigationBarVC {
 
+    @IBOutlet weak var cardNo: InputView! {
+        didSet {
+            cardNo.type = .card_no
+            cardNo.textFormat = "XXXX XXXX XXXX XXXX"
+        }
+    }
+    @IBOutlet weak var cardExpireDate: InputView! {
+        didSet {
+            cardExpireDate.type = .card_expire_date
+            cardExpireDate.textFormat = "XX/XX"
+        }
+    }
+    @IBOutlet weak var cardCVV: InputView! {
+        didSet {
+            cardCVV.type = .cvv
+            cardCVV.textFormat = "XXX"
+            cardCVV.txtField.isSecureTextEntry = true
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +45,11 @@ class AddAccountViewController: CustomNavigationBarVC {
 
     @IBAction func addBtnTapped() {
         //TODO: make req and other stuffs
-        Storage.hasBankAccounts = true
-        self.navigationController?.popViewController(animated: true)
+        if runValidation(cardNo, cardExpireDate, cardCVV) {
+            Storage.hasBankAccounts = true
+            Storage.bankCards.append("New card")
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
 

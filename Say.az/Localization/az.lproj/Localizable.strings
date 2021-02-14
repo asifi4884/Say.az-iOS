@@ -60,9 +60,12 @@
 "pin.no.placeholder" = "FİN";
 "speciality.placeholder" = "Fəaliyyət növü";
 "choose.bank.placeholder" = "Bank seçin";
-"card.no.placeholder" = "Kart yoxdur";
+"card.no.placeholder" = "Kart nömrəsi";
+"card.no.error" = "Kart nömrəsi düzgün formatda deyil";
 "card.expire.date.placeholder" = "Son istifadə tarixi";
+"card.expire.date.error" = "Bitmə tarixi düzgün formatda deyil";
 "card.cvc.cvv.placeholder" = "CVC \ CVV";
+"card.cvc.cvv.error" = "CVC \ CVV düzgün formatda deyil";
 "search.placeholder" = "Axtarış ...";
 "receipt.type.placeholder" = "Qaimə növü";
 "voen.placeholder" = "Səs";
@@ -108,6 +111,8 @@
 "about.app.title" = "Tətbiq haqqında məlumat";
 "delete.profile.title" = "Profili silin";
 "delete.profile.alert.title" = "Bu hesabı silməyə əminsiniz?";
+"logout.profile.title" = "Çıxış";
+"logout.profile.alert.title" = "Çıxacağınıza əminsiniz?";
 
 // ------------------------------------------------ - - -------------------------
 // Dil xəbərdarlığı (popup) başlıqları

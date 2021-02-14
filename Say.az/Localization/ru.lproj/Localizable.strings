@@ -61,8 +61,11 @@
 "speciality.placeholder" = "Вид деятельности";
 "choose.bank.placeholder" = "Выбрать банк";
 "card.no.placeholder" = "Номер карты";
+"card.no.error" = "Номер карты не в правильном формате";
 "card.expire.date.placeholder" = "Срок действия";
+"card.expire.date.error" = "Дата истечения срока не в правильном формате";
 "card.cvc.cvv.placeholder" = "CVC \ CVV";
+"card.cvc.cvv.error" = "CVC \ CVV не в правильном формате";
 "search.placeholder" = "Искать ...";
 "receipt.type.placeholder" = "Тип квитанции";
 "voen.placeholder" = "Голос";
@@ -108,6 +111,8 @@
 "about.app.title" = "Информация о приложении";
 "delete.profile.title" = "Удалить профиль";
 "delete.profile.alert.title" = "Вы действительно хотите удалить эту учетную запись?";
+"logout.profile.title" = "Выйти";
+"logout.profile.alert.title" = "Вы действительно хотите выйти из системы?";
 
 // ------------------------------------------------ - - -------------------------
 // Заголовки предупреждений о языке (всплывающих окон)

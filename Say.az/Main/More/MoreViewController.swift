@@ -79,10 +79,17 @@ extension MoreViewController {
     func profileAction(at index: Int) {
         switch index {
         case 1:
-            self.tabBarController?.selectedIndex = 0
+            self.tabBarController?.selectedIndex = 1
         case 2:
             let vc = BankCardViewController().initialize(fromSb: .bank_account)!
             self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let email = "office@taxes.gov.az"
+            if let url = URL(string: "mailto:\(email)") {
+
+                UIApplication.shared.open(url)
+
+            }
         default:
             break
         }
@@ -105,6 +112,18 @@ extension MoreViewController {
             self.performSegue(withIdentifier: "about.app", sender: nil)
         case 1:
             showAlert(with: "delete.profile.alert.title".localize(), preferredStyle: .alert, actions:
+                        [(title: "yes.button.title".localize(), style: .default),
+                         (title: "cancel.button.title".localize(), style: .cancel)
+                        ]) { (_, action) in
+                if action.style == .default {
+                    //TODO: action to delete profile
+                    Storage.isLogged = false
+                    let vc = IntroViewController().initialize(fromSb: .intro)!
+                    Helper.shared.makeRoot(vc)
+                }
+            }
+        case 2:
+            showAlert(with: "logout.profile.alert.title".localize(), preferredStyle: .alert, actions:
                         [(title: "yes.button.title".localize(), style: .default),
                          (title: "cancel.button.title".localize(), style: .cancel)
                         ]) { (_, action) in

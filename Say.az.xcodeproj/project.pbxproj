@@ -46,6 +46,7 @@
 		5F3A5DE6258A8B2B00EB447A /* BigButtonNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A5DE5258A8B2B00EB447A /* BigButtonNavBar.swift */; };
 		5F3A5DEB258A8B7400EB447A /* BigButtonNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3A5DEA258A8B7400EB447A /* BigButtonNavBar.xib */; };
 		5F3A5DF1258A8D4C00EB447A /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A5DF0258A8D4C00EB447A /* CustomNavigationBarVC.swift */; };
+		5F44517725BDE62E0049BDF9 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F44517625BDE62E0049BDF9 /* FieldValidator.swift */; };
 		5F577F5D25964B6A0039124B /* AddAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577F5C25964B6A0039124B /* AddAccountCell.swift */; };
 		5F577F6225965AE30039124B /* BankAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F577F6125965AE30039124B /* BankAccount.storyboard */; };
 		5F577F6725965CD70039124B /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F577F6625965CD70039124B /* AddAccountViewController.swift */; };
@@ -158,6 +159,7 @@
 		5F3A5DE5258A8B2B00EB447A /* BigButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonNavBar.swift; sourceTree = "<group>"; };
 		5F3A5DEA258A8B7400EB447A /* BigButtonNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigButtonNavBar.xib; sourceTree = "<group>"; };
 		5F3A5DF0258A8D4C00EB447A /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
+		5F44517625BDE62E0049BDF9 /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
 		5F577F5C25964B6A0039124B /* AddAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountCell.swift; sourceTree = "<group>"; };
 		5F577F6125965AE30039124B /* BankAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankAccount.storyboard; sourceTree = "<group>"; };
 		5F577F6625965CD70039124B /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				5F193634258E73F600D406FA /* InputView.swift */,
+				5F44517625BDE62E0049BDF9 /* FieldValidator.swift */,
 				5F604F38258FAD0D00C0EBA1 /* DropdownInputView.swift */,
 				5FEF500325A9E02B00328161 /* RightDropdownInputView.swift */,
 				5F19362F258E702000D406FA /* InputView.xib */,
@@ -872,6 +875,7 @@
 				5F604F4C258FC2E400C0EBA1 /* AccounCardCell.swift in Sources */,
 				5F0532D92593CA98009457E4 /* CustomTableViewController.swift in Sources */,
 				5FA86487259395F800E9C843 /* LocalizationOnStoryboard.swift in Sources */,
+				5F44517725BDE62E0049BDF9 /* FieldValidator.swift in Sources */,
 				5F5910142595085B007C3086 /* Helper.swift in Sources */,
 				5F3A5DB4258A71F700EB447A /* SplashViewController.swift in Sources */,
 				5F577F71259668C80039124B /* TopBarView.swift in Sources */,
@@ -1070,7 +1074,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1094,7 +1098,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

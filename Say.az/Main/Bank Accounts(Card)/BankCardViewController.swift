@@ -18,7 +18,6 @@ class BankCardViewController: CustomNavigationBarVC, UITableViewDelegate, UITabl
         }
     }
 
-    var numberOfRow = 4
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,19 +27,20 @@ class BankCardViewController: CustomNavigationBarVC, UITableViewDelegate, UITabl
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setTitle("bank.accounts.title".localize())
+        tableView.reloadData()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfRow
+        return Storage.bankCards.count + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
 
-        if indexPath.row == numberOfRow - 1 //TODO: count - 1
+        if indexPath.row == Storage.bankCards.count //TODO: count - 1
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "add.card.cell") as! AddAccountCell
             cell.addAccountAction = {
@@ -50,6 +50,7 @@ class BankCardViewController: CustomNavigationBarVC, UITableViewDelegate, UITabl
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "bank.card.cell") as! BankCardCell
+        cell.cardView.titleLbl.text = Storage.bankCards[indexPath.row]
         cell.deleteAction = {
             self.deleteCard(at: indexPath)
         }
@@ -66,13 +67,11 @@ class BankCardViewController: CustomNavigationBarVC, UITableViewDelegate, UITabl
     }
 
     private func deleteCard(at indexPath: IndexPath) {
-        numberOfRow -= 1
+        Storage.bankCards.remove(at: indexPath.row)
         self.tableView.performBatchUpdates {
             self.tableView.deleteRows(at: [indexPath], with: .right)
         } completion: { (_) in
             
         }
-
-
     }
 }

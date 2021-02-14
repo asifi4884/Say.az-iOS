@@ -35,6 +35,12 @@ extension UIViewController {
         }
     }
 
-
+    func runValidation(_ inputs: InputView...) -> Bool {
+        var isValid = true
+        inputs.forEach { (input) in
+            if !input.validate() { isValid = false }
+        }
+        return isValid
+    }
 
 }

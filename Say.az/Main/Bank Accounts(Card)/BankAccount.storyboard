@@ -163,6 +163,7 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.no.placeholder"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedError" value="card.no.error"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="By6-Xo-JlE">
@@ -177,6 +178,7 @@
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.expire.date.placeholder"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedError" value="card.expire.date.error"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7by-vP-wRH" customClass="InputView" customModule="Say_az" customModuleProvider="target">
@@ -188,6 +190,7 @@
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Telefon"/>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceHolder" value="card.cvc.cvv.placeholder"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedError" value="card.expire.date.error"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
@@ -249,6 +252,11 @@
                             <constraint firstItem="X8D-Xo-mpx" firstAttribute="leading" secondItem="rkz-I4-hbA" secondAttribute="leading" constant="15" id="pHa-fe-AZd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardCVV" destination="7by-vP-wRH" id="a5P-z7-40X"/>
+                        <outlet property="cardExpireDate" destination="7cN-CI-mTW" id="SiN-Z4-115"/>
+                        <outlet property="cardNo" destination="7EF-hq-kec" id="Eac-Jb-DJ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGO-6K-h7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
