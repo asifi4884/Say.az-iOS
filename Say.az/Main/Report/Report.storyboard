@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qwV-VZ-qKb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -15,20 +15,20 @@
             <objects>
                 <viewController id="qwV-VZ-qKb" customClass="ReportContainerViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="odk-HP-qKb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpL-oc-fGo" customClass="TopBarView" customModule="Say_az" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0qc-xh-3Jn"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-RY-dmA">
-                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                                 <connections>
-                                    <segue destination="rMQ-ft-fto" kind="embed" id="v18-73-d0Z"/>
+                                    <segue destination="0eh-7J-cRs" kind="embed" id="utb-Ca-YHp"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -52,30 +52,33 @@
             </objects>
             <point key="canvasLocation" x="-381" y="73"/>
         </scene>
-        <!--Receipt List View Controller-->
+        <!--Report List View Controller-->
         <scene sceneID="M38-yl-AOX">
             <objects>
-                <viewController id="0eh-7J-cRs" customClass="ReceiptListViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0eh-7J-cRs" customClass="ReportListViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R2v-Uq-BY0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-42-qHq" customClass="TitleView" customModule="Say_az" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="FCQ-5p-42Q"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="report.title"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hde-MR-9m1">
-                                <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                                <rect key="frame" x="0.0" y="148" width="375" height="469"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yo7-gx-saE">
-                                <rect key="frame" x="15" y="56" width="384" height="60"/>
+                                <rect key="frame" x="15" y="56" width="345" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-4h-IpM" customClass="InputView" customModule="Say_az" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="qgj-h1-yLG"/>
@@ -89,20 +92,23 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q9-NA-bks" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
-                                <rect key="frame" x="342" y="774" width="56" height="56"/>
+                                <rect key="frame" x="303" y="529" width="56" height="56"/>
                                 <color key="backgroundColor" name="OrangeButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="29T-cn-kee"/>
                                     <constraint firstAttribute="width" constant="56" id="RUZ-Wh-FCT"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="down.arrow"/>
+                                <state key="normal" image="plus.icon"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="28"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isImgTinted" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rMQ-ft-fto" kind="show" id="EA8-dq-QAC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhO-Ah-KAb"/>
@@ -124,6 +130,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="hde-MR-9m1" id="Vua-5H-euk"/>
+                        <outlet property="titleView" destination="AKV-42-qHq" id="XV9-cS-qD1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk6-GZ-WxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -133,22 +140,22 @@
         <!--Add Report View Controller-->
         <scene sceneID="NIs-fZ-e19">
             <objects>
-                <viewController storyboardIdentifier="AddReportViewController" id="rMQ-ft-fto" customClass="AddReportViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddReportViewController" modalPresentationStyle="fullScreen" id="rMQ-ft-fto" customClass="AddReportViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ddp-wu-jR8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvl-Eq-KMp">
-                                <rect key="frame" x="0.0" y="44" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-Dr-waV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="724"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="grm-5h-Aif">
-                                                <rect key="frame" x="15" y="40" width="384" height="53.5"/>
+                                                <rect key="frame" x="15" y="40" width="345" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asan login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g72-OZ-liV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="26.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                                         <color key="textColor" name="MainTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -157,7 +164,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKG-pz-Tsb">
-                                                        <rect key="frame" x="0.0" y="36.5" width="384" height="17"/>
+                                                        <rect key="frame" x="0.0" y="36.5" width="345" height="33.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" name="FadedTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -168,10 +175,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-AR-TBb">
-                                                <rect key="frame" x="15" y="153.5" width="384" height="396.5"/>
+                                                <rect key="frame" x="15" y="170" width="345" height="324"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epE-hr-cCc" customClass="DropdownInputView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="YEa-pp-fah"/>
@@ -183,10 +190,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EoJ-hW-zmB">
-                                                        <rect key="frame" x="0.0" y="88" width="384" height="132.5"/>
+                                                        <rect key="frame" x="0.0" y="88" width="345" height="60"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T05-je-kCe" customClass="InputView" customModule="Say_az" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="36.5" width="188" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="60"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="mG4-8R-IYj"/>
@@ -197,7 +204,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEW-jC-9f9" customClass="InputView" customModule="Say_az" customModuleProvider="target">
-                                                                <rect key="frame" x="196" y="36.5" width="188" height="60"/>
+                                                                <rect key="frame" x="176.5" y="0.0" width="168.5" height="60"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="dNL-Jz-0yq"/>
@@ -210,7 +217,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Iu-gS2" customClass="RightDropdownInputView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="248.5" width="384" height="60"/>
+                                                        <rect key="frame" x="0.0" y="176" width="345" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="QSN-6S-qgR"/>
@@ -222,7 +229,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMR-fn-sDT" customClass="RightDropdownInputView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="336.5" width="384" height="60"/>
+                                                        <rect key="frame" x="0.0" y="264" width="345" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="r72-1C-SbV"/>
@@ -236,10 +243,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1EL-cJ-ZOZ">
-                                                <rect key="frame" x="15" y="590" width="384" height="116"/>
+                                                <rect key="frame" x="15" y="534" width="345" height="116"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-9z-Cm1" customClass="RoundedButton" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="56"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="56"/>
                                                         <color key="backgroundColor" name="MainButtonColorActive"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="i31-tE-7un"/>
@@ -253,7 +260,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm8-z2-itC">
-                                                        <rect key="frame" x="0.0" y="68" width="384" height="48"/>
+                                                        <rect key="frame" x="0.0" y="68" width="345" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="Myq-tc-lCA"/>
                                                         </constraints>
@@ -302,6 +309,7 @@
                             <constraint firstItem="JGa-U6-clu" firstAttribute="trailing" secondItem="dvl-Eq-KMp" secondAttribute="trailing" id="psJ-8i-3sj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8ED-Hq-yDK"/>
                     <connections>
                         <outlet property="typeOfReport" destination="epE-hr-cCc" id="zRJ-bw-pPL"/>
                     </connections>
@@ -314,6 +322,7 @@
     <resources>
         <image name="down.arrow" width="14" height="8"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="plus.icon" width="24" height="24"/>
         <namedColor name="FadedTitleColor">
             <color red="0.61599999666213989" green="0.61599999666213989" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

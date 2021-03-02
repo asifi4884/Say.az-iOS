@@ -79,6 +79,7 @@
 		5FA86486259395F800E9C843 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86484259395F800E9C843 /* LocalizationManager.swift */; };
 		5FA86487259395F800E9C843 /* LocalizationOnStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86485259395F800E9C843 /* LocalizationOnStoryboard.swift */; };
 		5FA864A4259398DA00E9C843 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA864A3259398DA00E9C843 /* Intro.storyboard */; };
+		5FB5061225E1706700897011 /* ReportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB5061125E1706700897011 /* ReportListViewController.swift */; };
 		5FEF4FF525A9C17800328161 /* Receipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF4FF425A9C17800328161 /* Receipt.storyboard */; };
 		5FEF4FFA25A9C56500328161 /* ReceiptContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4FF925A9C56500328161 /* ReceiptContainerViewController.swift */; };
 		5FEF4FFF25A9C58C00328161 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4FFE25A9C58C00328161 /* ReceiptListViewController.swift */; };
@@ -196,6 +197,7 @@
 		5FA86484259395F800E9C843 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		5FA86485259395F800E9C843 /* LocalizationOnStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationOnStoryboard.swift; sourceTree = "<group>"; };
 		5FA864A3259398DA00E9C843 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		5FB5061125E1706700897011 /* ReportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListViewController.swift; sourceTree = "<group>"; };
 		5FEF4FF425A9C17800328161 /* Receipt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receipt.storyboard; sourceTree = "<group>"; };
 		5FEF4FF925A9C56500328161 /* ReceiptContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptContainerViewController.swift; sourceTree = "<group>"; };
 		5FEF4FFE25A9C58C00328161 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
@@ -552,6 +554,7 @@
 				5FEF500925AA1A7D00328161 /* Report.storyboard */,
 				5FEF500F25AA1BA100328161 /* ReportContainerViewController.swift */,
 				5FEF501725AA1BC500328161 /* AddReportViewController.swift */,
+				5FB5061125E1706700897011 /* ReportListViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -866,6 +869,7 @@
 				5F5F6B722597BD2A00D90EF4 /* CommonTableViewCell.swift in Sources */,
 				5FEF502625AA1ED100328161 /* NotificationsViewController.swift in Sources */,
 				5F593DCB25961CAC00CEA848 /* BankCardViewController.swift in Sources */,
+				5FB5061225E1706700897011 /* ReportListViewController.swift in Sources */,
 				5F18A891258671B10042F62E /* SceneDelegate.swift in Sources */,
 				5FEF501825AA1BC500328161 /* AddReportViewController.swift in Sources */,
 				5F3A5DF1258A8D4C00EB447A /* CustomNavigationBarVC.swift in Sources */,
@@ -1074,7 +1078,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1098,7 +1102,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

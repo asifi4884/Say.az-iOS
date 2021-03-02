@@ -18,7 +18,10 @@ class MoreViewController: CustomNavigationBarVC {
     @IBOutlet weak var sketchyTopView: UIView!
     @IBOutlet var profileActionViews: [SimpleCardView]! {
         didSet {
+            profileActionViews[1].titleLbl.text = "3412341234132"
+            profileActionViews[2].titleLbl.text = "6JSDEDX"
             for (index, view) in profileActionViews.enumerated() {
+                view.backgroundColor = .clear
                 view.addTapGestureRecognizer {
                     self.profileAction(at: index)
                 }
@@ -29,6 +32,7 @@ class MoreViewController: CustomNavigationBarVC {
     @IBOutlet var settingsActionViews: [SimpleCardView]! {
         didSet {
             for (index, view) in settingsActionViews.enumerated() {
+                view.backgroundColor = .clear
                 view.addTapGestureRecognizer {
                     self.settingsAction(at: index)
                 }
@@ -39,6 +43,7 @@ class MoreViewController: CustomNavigationBarVC {
     @IBOutlet var otherActionViews: [SimpleCardView]! {
         didSet {
             for (index, view) in otherActionViews.enumerated() {
+                view.backgroundColor = .clear
                 view.addTapGestureRecognizer {
                     self.otherAction(at: index)
                 }
@@ -78,17 +83,13 @@ class MoreViewController: CustomNavigationBarVC {
 extension MoreViewController {
     func profileAction(at index: Int) {
         switch index {
-        case 1:
-            self.tabBarController?.selectedIndex = 1
-        case 2:
+        case 3:
             let vc = BankCardViewController().initialize(fromSb: .bank_account)!
             self.navigationController?.pushViewController(vc, animated: true)
-        case 3:
+        case 4:
             let email = "office@taxes.gov.az"
             if let url = URL(string: "mailto:\(email)") {
-
                 UIApplication.shared.open(url)
-
             }
         default:
             break

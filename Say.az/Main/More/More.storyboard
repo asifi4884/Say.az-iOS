@@ -62,10 +62,10 @@
                                 <rect key="frame" x="0.0" y="244" width="414" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVz-uG-9CS">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="794"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="KnN-jB-ZUv">
-                                                <rect key="frame" x="14" y="0.0" width="386" height="638"/>
+                                                <rect key="frame" x="14" y="0.0" width="386" height="778"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profil məlumatları" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-o7-qz2">
                                                         <rect key="frame" x="0.0" y="0.0" width="386" height="14"/>
@@ -78,28 +78,40 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJ8-i3-zky" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="32" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="doZ-Ua-jTH"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="icon" value="edit"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="leftTitle" value="speciality.placeholder"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h57-u4-T2A" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="102" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="TSj-jZ-6aL"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="percent"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="tax.invoices.title"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="person.icon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="leftTitle" value="voen.placeholder"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjH-Bn-Jzk" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="172" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="a3N-X4-BjH"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="person.icon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="leftTitle" value="pin.no.placeholder"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-wP-DI6" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="172" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="242" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="kvI-ew-OTy"/>
                                                         </constraints>
@@ -109,8 +121,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-90-fuu" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="242" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="312" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="Bej-XK-bGu"/>
                                                         </constraints>
@@ -120,7 +132,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profil məlumatları" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg4-To-LoU">
-                                                        <rect key="frame" x="0.0" y="312" width="386" height="14"/>
+                                                        <rect key="frame" x="0.0" y="382" width="386" height="14"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" name="FadedTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -129,8 +141,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uz-Jr-FaP" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="344" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="414" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="TGx-g3-FdG"/>
                                                         </constraints>
@@ -141,8 +153,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDe-c5-cvc" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="414" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="484" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="LFt-Ua-o55"/>
                                                         </constraints>
@@ -152,7 +164,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profil məlumatları" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9r-rb-LOA">
-                                                        <rect key="frame" x="0.0" y="484" width="386" height="14"/>
+                                                        <rect key="frame" x="0.0" y="554" width="386" height="14"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" name="FadedTitleColor"/>
                                                         <nil key="highlightedColor"/>
@@ -161,8 +173,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAe-8Z-CCv" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="516" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="586" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="24k-Rt-h7O"/>
                                                         </constraints>
@@ -172,14 +184,25 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLt-dz-kiD" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="586" width="386" height="52"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="0.0" y="656" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="quL-tO-3KG"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="icon" value="delete"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="delete.profile.title"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAu-h0-dae" customClass="SimpleCardView" customModule="Say_az" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="726" width="386" height="52"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="kle-cZ-ajo"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="logout.profile.title"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="logout"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
@@ -224,12 +247,14 @@
                         <outlet property="sketchyTopViewHeight" destination="D0O-f4-vrf" id="W93-wW-ocN"/>
                         <outletCollection property="profileActionViews" destination="SJ8-i3-zky" collectionClass="NSMutableArray" id="xvZ-YS-heG"/>
                         <outletCollection property="profileActionViews" destination="h57-u4-T2A" collectionClass="NSMutableArray" id="2oJ-lL-blc"/>
-                        <outletCollection property="profileActionViews" destination="qZ2-wP-DI6" collectionClass="NSMutableArray" id="OZS-dF-X3V"/>
-                        <outletCollection property="profileActionViews" destination="LgF-90-fuu" collectionClass="NSMutableArray" id="Le5-hI-0u0"/>
                         <outletCollection property="settingsActionViews" destination="1Uz-Jr-FaP" collectionClass="NSMutableArray" id="vR9-rk-KFl"/>
                         <outletCollection property="settingsActionViews" destination="rDe-c5-cvc" collectionClass="NSMutableArray" id="Wdw-YG-ZuX"/>
                         <outletCollection property="otherActionViews" destination="bAe-8Z-CCv" collectionClass="NSMutableArray" id="oe3-Lq-Y4A"/>
                         <outletCollection property="otherActionViews" destination="OLt-dz-kiD" collectionClass="NSMutableArray" id="cRf-sJ-Rsq"/>
+                        <outletCollection property="profileActionViews" destination="FjH-Bn-Jzk" collectionClass="NSMutableArray" id="72N-E0-Ybg"/>
+                        <outletCollection property="profileActionViews" destination="qZ2-wP-DI6" collectionClass="NSMutableArray" id="kfZ-bE-9Pk"/>
+                        <outletCollection property="profileActionViews" destination="LgF-90-fuu" collectionClass="NSMutableArray" id="hIC-Ko-sTo"/>
+                        <outletCollection property="otherActionViews" destination="eAu-h0-dae" collectionClass="NSMutableArray" id="1kE-rC-0tz"/>
                         <segue destination="oBe-io-3HX" kind="presentation" identifier="about.app" id="3G9-ua-CIM"/>
                     </connections>
                 </viewController>
@@ -276,9 +301,10 @@
         <image name="delete" width="16" height="16"/>
         <image name="edit" width="16" height="16"/>
         <image name="info" width="16" height="16"/>
+        <image name="logout" width="20" height="19"/>
         <image name="mode" width="16" height="16"/>
         <image name="no.photo" width="120" height="120"/>
-        <image name="percent" width="16" height="16"/>
+        <image name="person.icon" width="16" height="17"/>
         <image name="send" width="16" height="16"/>
         <image name="translate" width="16" height="16"/>
         <namedColor name="FadedTitleColor">
