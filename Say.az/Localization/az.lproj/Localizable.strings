@@ -56,7 +56,7 @@
 "person.id.placeholder" = "İstifadəçi ID";
 "name.placeholder" = "Reklam";
 "surname.placeholder" = "Soyad";
-"asan.no.placeholder" = "Asan yox";
+"asan.no.placeholder" = "Asan no";
 "pin.no.placeholder" = "FİN";
 "speciality.placeholder" = "Fəaliyyət növü";
 "choose.bank.placeholder" = "Bank seçin";
@@ -85,8 +85,8 @@
 // _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- _- _- _-_-_-_-_-_-_-_-_-_-_-_-_-_
 // Paylaşılan Düymə başlıqları
 "back.button.title" = "Geri";
-"register.button.arrow.title" = "qeyd →";
-"register.button.title" = "qeyd →";
+"register.button.arrow.title" = "qeydiyyat →";
+"register.button.title" = "qeydiyyat →";
 "cancel.button.title" = "Ləğv et";
 "yes.button.title" = "Bəli";
 "add.card.button.title" = "Yeni əlavə et";

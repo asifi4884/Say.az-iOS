@@ -47,7 +47,7 @@ class AddAccountViewController: CustomNavigationBarVC {
         //TODO: make req and other stuffs
         if runValidation(cardNo, cardExpireDate, cardCVV) {
             Storage.hasBankAccounts = true
-            Storage.bankCards.append("New card")
+            Storage.bankCards.append("m_\(cardNo.text)")
             self.navigationController?.popViewController(animated: true)
         }
     }

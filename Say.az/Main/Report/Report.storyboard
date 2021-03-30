@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hde-MR-9m1">
-                                <rect key="frame" x="0.0" y="148" width="375" height="469"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="497"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yo7-gx-saE">
@@ -123,7 +123,7 @@
                             <constraint firstItem="Yo7-gx-saE" firstAttribute="leading" secondItem="R2v-Uq-BY0" secondAttribute="leading" constant="15" id="RmU-Nc-ORg"/>
                             <constraint firstItem="Yo7-gx-saE" firstAttribute="top" secondItem="AKV-42-qHq" secondAttribute="bottom" constant="24" id="W4A-mh-jmq"/>
                             <constraint firstAttribute="bottom" secondItem="hde-MR-9m1" secondAttribute="bottom" id="Yjy-ng-tmX"/>
-                            <constraint firstItem="hde-MR-9m1" firstAttribute="top" secondItem="Yo7-gx-saE" secondAttribute="bottom" constant="32" id="mf6-jE-gpG"/>
+                            <constraint firstItem="hde-MR-9m1" firstAttribute="top" secondItem="Yo7-gx-saE" secondAttribute="bottom" constant="4" id="mf6-jE-gpG"/>
                             <constraint firstItem="hde-MR-9m1" firstAttribute="leading" secondItem="R2v-Uq-BY0" secondAttribute="leading" id="p61-3a-RUK"/>
                             <constraint firstAttribute="trailing" secondItem="hde-MR-9m1" secondAttribute="trailing" id="wux-z5-YIq"/>
                         </constraints>

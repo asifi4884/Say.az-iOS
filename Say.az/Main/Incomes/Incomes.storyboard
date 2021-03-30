@@ -159,7 +159,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jZN-ag-Zdb">
-                                <rect key="frame" x="0.0" y="148" width="414" height="620"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="648"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -172,7 +172,7 @@
                             <constraint firstAttribute="bottom" secondItem="jZN-ag-Zdb" secondAttribute="bottom" id="KAg-tL-XwI"/>
                             <constraint firstItem="i0b-2g-2oN" firstAttribute="top" secondItem="5g5-cA-jNf" secondAttribute="top" id="ga7-3y-m1h"/>
                             <constraint firstItem="4DF-G0-h3j" firstAttribute="top" secondItem="i0b-2g-2oN" secondAttribute="bottom" constant="24" id="oog-eM-CF4"/>
-                            <constraint firstItem="jZN-ag-Zdb" firstAttribute="top" secondItem="4DF-G0-h3j" secondAttribute="bottom" constant="32" id="tyj-94-NuL"/>
+                            <constraint firstItem="jZN-ag-Zdb" firstAttribute="top" secondItem="4DF-G0-h3j" secondAttribute="bottom" constant="4" id="tyj-94-NuL"/>
                             <constraint firstAttribute="trailing" secondItem="i0b-2g-2oN" secondAttribute="trailing" id="ujN-SJ-AYa"/>
                             <constraint firstAttribute="trailing" secondItem="4DF-G0-h3j" secondAttribute="trailing" constant="15" id="vgS-f9-Si2"/>
                             <constraint firstItem="i0b-2g-2oN" firstAttribute="leading" secondItem="5g5-cA-jNf" secondAttribute="leading" id="xnJ-Bf-Vcq"/>

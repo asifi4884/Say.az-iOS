@@ -27,10 +27,12 @@ class ReportListViewController: CustomNavigationBarVC, UITableViewDelegate, UITa
             }
         }
     }
-    var list: [(sectionTitle: String, rows: [String])] = [("2020", ["sdfa", "sdgdsg", "sgdgasgd"]),
-       ("2020", ["sdfa", "sdgdsg", "sgdgasgd"]),
-    ("2020", ["sdfa", "sdgdsg", "sgdgasgd"]),
-    ("2020", ["sdfa", "sdgdsg", "sgdgasgd"])]
+    var list: [(sectionTitle: String, rows: [RecieptDetails])] = [("2020",
+                                                                   [.init(name: "Jhon Nielson", voen: "324314123", amount: "200 AZN", date: "29.12.2020"), .init(name: "Bery Allen", voen: "324314123", amount: "400 AZN", date: "30.12.2020")]),
+       ("2021", [
+            .init(name: "Ashly West", voen: "32431433", amount: "1,200 AZN", date: "23.01.2021"),
+            .init(name: "Kyle Barrack", voen: "4524123", amount: "800 AZN", date: "06.03.2021"),
+            .init(name: "Tony Nest", voen: "984314123", amount: "320 AZN", date: "01.04.2020")])]
 
 
     override func viewDidLoad() {
@@ -59,6 +61,10 @@ class ReportListViewController: CustomNavigationBarVC, UITableViewDelegate, UITa
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "income.cell") as! CommonTableViewCell
+        cell.name.text = list[indexPath.section].rows[indexPath.row].name
+        cell.voen.text = list[indexPath.section].rows[indexPath.row].voen
+        cell.amount.text = list[indexPath.section].rows[indexPath.row].amount
+        cell.date.text = list[indexPath.section].rows[indexPath.row].date
         //cell.hasLeftActions = true
         return cell
     }

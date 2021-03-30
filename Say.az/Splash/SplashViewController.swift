@@ -24,6 +24,7 @@ class SplashViewController: UIViewController {
         if (Storage.isLogged) {
             openVC(of: .home)
         } else {
+            LocalizationManager.shared.setLanguage(languageCode: "az")
             openVC(of: .intro)
         }
     }

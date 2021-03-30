@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -138,6 +139,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="amount" destination="7IA-UH-QUa" id="eIl-14-N23"/>
+                <outlet property="date" destination="F6J-rZ-y6A" id="FiY-Zp-I9f"/>
+                <outlet property="imgView" destination="ih8-9Q-2bq" id="C0b-16-hso"/>
+                <outlet property="name" destination="l5P-2I-0yc" id="XdO-Fg-END"/>
+                <outlet property="voen" destination="oYX-k6-IKn" id="O9b-NP-Y4w"/>
                 <outletCollection property="leftActionBtns" destination="9BT-EL-fcI" collectionClass="NSMutableArray" id="PjC-jV-PP7"/>
                 <outletCollection property="leftActionBtns" destination="nGF-zN-dvu" collectionClass="NSMutableArray" id="LRW-hZ-ijF"/>
             </connections>

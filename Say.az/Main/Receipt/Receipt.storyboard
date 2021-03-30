@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="14J-80-EpW">
-                                <rect key="frame" x="0.0" y="148" width="414" height="620"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="648"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-IM-YK1">
@@ -116,7 +116,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="14J-80-EpW" secondAttribute="trailing" id="6jZ-1o-EOx"/>
                             <constraint firstItem="xrA-Cr-LEd" firstAttribute="top" secondItem="a9m-V0-TPk" secondAttribute="top" id="Az5-1a-cHc"/>
-                            <constraint firstItem="14J-80-EpW" firstAttribute="top" secondItem="ar3-IM-YK1" secondAttribute="bottom" constant="32" id="CCZ-I1-l6L"/>
+                            <constraint firstItem="14J-80-EpW" firstAttribute="top" secondItem="ar3-IM-YK1" secondAttribute="bottom" constant="4" id="CCZ-I1-l6L"/>
                             <constraint firstAttribute="trailing" secondItem="ar3-IM-YK1" secondAttribute="trailing" constant="15" id="LbJ-30-K51"/>
                             <constraint firstItem="xrA-Cr-LEd" firstAttribute="leading" secondItem="a9m-V0-TPk" secondAttribute="leading" id="MCK-Rh-HYE"/>
                             <constraint firstItem="ZrM-jO-daf" firstAttribute="trailing" secondItem="SiF-Em-jp2" secondAttribute="trailing" constant="16" id="Mgj-fo-i7f"/>

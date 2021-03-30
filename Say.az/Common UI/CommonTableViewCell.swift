@@ -13,7 +13,12 @@ class CommonTableViewCell: UITableViewCell {
             leftActionBtns.forEach { $0.isHidden = true }
         }
     }
-
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var voen: UILabel!
+    @IBOutlet weak var amount: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
     var hasLeftActions = false {
         didSet {
             guard hasLeftActions else { return }

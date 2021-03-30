@@ -14,6 +14,6 @@ struct Storage {
     @UserDefaultsBacked(key: "has_bank_accounts", defaultValue: false)
     static var hasBankAccounts
 
-    @UserDefaultsBacked(key: "temp_cards", defaultValue: ["ATB card", "Express Bank", "Ubank", "YeloCard"])
+    @UserDefaultsBacked(key: "temp_cards", defaultValue: ["v_1212", "v_3123", "m_3131", "v_4234"])
     static var bankCards
 }

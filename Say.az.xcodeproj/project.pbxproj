@@ -23,7 +23,6 @@
 		5F0BBCEA25A8CE8C00B5951F /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BBCE925A8CE8C00B5951F /* ChartData.swift */; };
 		5F18A88F258671B10042F62E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A88E258671B10042F62E /* AppDelegate.swift */; };
 		5F18A891258671B10042F62E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A890258671B10042F62E /* SceneDelegate.swift */; };
-		5F18A898258671B40042F62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F18A897258671B40042F62E /* Assets.xcassets */; };
 		5F18A89B258671B40042F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F18A899258671B40042F62E /* LaunchScreen.storyboard */; };
 		5F18A8A6258671B40042F62E /* Say_azTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A8A5258671B40042F62E /* Say_azTests.swift */; };
 		5F18A8B1258671B40042F62E /* Say_azUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18A8B0258671B40042F62E /* Say_azUITests.swift */; };
@@ -75,6 +74,8 @@
 		5F604F5A258FC62600C0EBA1 /* BankSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F604F59258FC62600C0EBA1 /* BankSelectViewController.swift */; };
 		5F604F62258FCBFE00C0EBA1 /* TableView+Reload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F604F61258FCBFE00C0EBA1 /* TableView+Reload.swift */; };
 		5F93EB5A258A8FCA0003CE1E /* UIResponder+ParenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93EB59258A8FCA0003CE1E /* UIResponder+ParenVC.swift */; };
+		5F9797EC26122FAA00BD54D3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9797EB26122FAA00BD54D3 /* File.swift */; };
+		5F9797F42612333200BD54D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9797F32612333200BD54D3 /* Assets.xcassets */; };
 		5FA8647C259394D400E9C843 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8647E259394D400E9C843 /* Localizable.strings */; };
 		5FA86486259395F800E9C843 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86484259395F800E9C843 /* LocalizationManager.swift */; };
 		5FA86487259395F800E9C843 /* LocalizationOnStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA86485259395F800E9C843 /* LocalizationOnStoryboard.swift */; };
@@ -132,7 +133,6 @@
 		5F18A88B258671B10042F62E /* Say.az.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Say.az.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F18A88E258671B10042F62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F18A890258671B10042F62E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F18A897258671B40042F62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F18A89A258671B40042F62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F18A89C258671B40042F62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F18A8A1258671B40042F62E /* Say.azTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Say.azTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +189,8 @@
 		5F604F59258FC62600C0EBA1 /* BankSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSelectViewController.swift; sourceTree = "<group>"; };
 		5F604F61258FCBFE00C0EBA1 /* TableView+Reload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Reload.swift"; sourceTree = "<group>"; };
 		5F93EB59258A8FCA0003CE1E /* UIResponder+ParenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+ParenVC.swift"; sourceTree = "<group>"; };
+		5F9797EB26122FAA00BD54D3 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5F9797F32612333200BD54D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA864742593947500E9C843 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5FA86478259394CC00E9C843 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5FA8647D259394D400E9C843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -339,8 +341,8 @@
 				5F3A5DD1258A7B2800EB447A /* Common UI */,
 				5F2DA0F32587FF7600F48910 /* Splash */,
 				5F2DA0F22587FF6800F48910 /* Intro */,
-				5F18A897258671B40042F62E /* Assets.xcassets */,
 				5F18A8C7258686D40042F62E /* Colors.xcassets */,
+				5F9797F32612333200BD54D3 /* Assets.xcassets */,
 				5F18A899258671B40042F62E /* LaunchScreen.storyboard */,
 				5F18A89C258671B40042F62E /* Info.plist */,
 			);
@@ -374,6 +376,7 @@
 				5F3A5DB8258A722000EB447A /* SegueID.swift */,
 				5F0532CC2593AF2B009457E4 /* SBName.swift */,
 				5F3A5DC7258A77CC00EB447A /* UserDefaultsBacked.swift */,
+				5F9797EB26122FAA00BD54D3 /* File.swift */,
 				5F604F3D258FAD8200C0EBA1 /* UIView+TapGesture.swift */,
 			);
 			path = Utils;
@@ -690,6 +693,7 @@
 			files = (
 				5F577F6C259665BF0039124B /* TopBarView.xib in Resources */,
 				5F577F6225965AE30039124B /* BankAccount.storyboard in Resources */,
+				5F9797F42612333200BD54D3 /* Assets.xcassets in Resources */,
 				5F5F6B512597929900D90EF4 /* TitleView.xib in Resources */,
 				5F18A89B258671B40042F62E /* LaunchScreen.storyboard in Resources */,
 				5F0532DF2593D50B009457E4 /* More.storyboard in Resources */,
@@ -698,7 +702,6 @@
 				5F0BBCD225A8C30B00B5951F /* Dashboard.storyboard in Resources */,
 				5FEF500A25AA1A7D00328161 /* Report.storyboard in Resources */,
 				5F18A8C8258686D40042F62E /* Colors.xcassets in Resources */,
-				5F18A898258671B40042F62E /* Assets.xcassets in Resources */,
 				5F577F7825966B900039124B /* Incomes.storyboard in Resources */,
 				5F2DA0E92587F44E00F48910 /* Splash.storyboard in Resources */,
 				5F5F6B732597BD2A00D90EF4 /* CommonTableViewCell.xib in Resources */,
@@ -842,6 +845,7 @@
 				5F593DC625961A6300CEA848 /* BankCardCell.swift in Sources */,
 				5F0BBCE025A8C58F00B5951F /* DashboardListViewController.swift in Sources */,
 				5F3A5DC8258A77CC00EB447A /* UserDefaultsBacked.swift in Sources */,
+				5F9797EC26122FAA00BD54D3 /* File.swift in Sources */,
 				5F593DC0259618D600CEA848 /* CustomButton.swift in Sources */,
 				5F18A88F258671B10042F62E /* AppDelegate.swift in Sources */,
 				5F0BBCE525A8C6E300B5951F /* LineChartCell.swift in Sources */,
@@ -1078,7 +1082,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1102,7 +1106,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Say.az/Say.az.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 2WXJ2HEKJZ;
 				INFOPLIST_FILE = Say.az/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

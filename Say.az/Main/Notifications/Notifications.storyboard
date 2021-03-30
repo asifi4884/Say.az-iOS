@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ans-QZ-FXo">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D1n-iG-p8K">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,48 +11,49 @@
     </dependencies>
     <scenes>
         <!--Notifications View Controller-->
-        <scene sceneID="e7q-Fk-z0U">
+        <scene sceneID="4aP-cK-MAr">
             <objects>
-                <viewController storyboardIdentifier="NotificationsViewController" id="Ans-QZ-FXo" customClass="NotificationsViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b2a-RY-YTv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="NotificationsViewController" id="D1n-iG-p8K" customClass="NotificationsViewController" customModule="Say_az" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SUl-Jx-dXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ld1-G4-N6Y">
-                                <rect key="frame" x="0.0" y="80" width="414" height="816"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlO-sy-fH2" customClass="TitleView" customModule="Say_az" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-yR-TIt" customClass="TitleView" customModule="Say_az" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40" width="375" height="32"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="oDR-ig-lV7"/>
+                                    <constraint firstAttribute="height" constant="32" id="4Hb-xi-uKk"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="notif.title"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="hasFilter" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7Ui-PH-gdd">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="eiH-v5-Xxl"/>
+                        <viewLayoutGuide key="safeArea" id="QSy-0V-dyG"/>
                         <color key="backgroundColor" name="MainBGColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ld1-G4-N6Y" secondAttribute="trailing" id="5YA-jZ-Kgr"/>
-                            <constraint firstItem="TlO-sy-fH2" firstAttribute="leading" secondItem="eiH-v5-Xxl" secondAttribute="leading" id="DIz-9I-8a6"/>
-                            <constraint firstAttribute="trailing" secondItem="TlO-sy-fH2" secondAttribute="trailing" id="Eco-JV-obg"/>
-                            <constraint firstItem="Ld1-G4-N6Y" firstAttribute="leading" secondItem="b2a-RY-YTv" secondAttribute="leading" id="IE4-hX-rgr"/>
-                            <constraint firstAttribute="bottom" secondItem="Ld1-G4-N6Y" secondAttribute="bottom" id="fkC-PF-aJx"/>
-                            <constraint firstItem="TlO-sy-fH2" firstAttribute="top" secondItem="eiH-v5-Xxl" secondAttribute="top" id="mma-eX-iP5"/>
-                            <constraint firstItem="Ld1-G4-N6Y" firstAttribute="top" secondItem="TlO-sy-fH2" secondAttribute="bottom" constant="4" id="rfo-xw-oxv"/>
+                            <constraint firstAttribute="trailing" secondItem="Inh-yR-TIt" secondAttribute="trailing" id="4sq-7M-m6y"/>
+                            <constraint firstItem="7Ui-PH-gdd" firstAttribute="leading" secondItem="SUl-Jx-dXO" secondAttribute="leading" id="D9T-Uy-7RI"/>
+                            <constraint firstAttribute="bottom" secondItem="7Ui-PH-gdd" secondAttribute="bottom" id="Jpe-lY-WPh"/>
+                            <constraint firstItem="7Ui-PH-gdd" firstAttribute="top" secondItem="Inh-yR-TIt" secondAttribute="bottom" constant="4" id="VOT-oP-rbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ui-PH-gdd" secondAttribute="trailing" id="fJu-j9-6f2"/>
+                            <constraint firstItem="Inh-yR-TIt" firstAttribute="top" secondItem="SUl-Jx-dXO" secondAttribute="top" constant="40" id="wKe-OJ-wgw"/>
+                            <constraint firstItem="Inh-yR-TIt" firstAttribute="leading" secondItem="SUl-Jx-dXO" secondAttribute="leading" id="ypL-cx-nrZ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Ld1-G4-N6Y" id="hBX-ig-5PI"/>
+                        <outlet property="tableView" destination="7Ui-PH-gdd" id="pec-u5-5de"/>
+                        <outlet property="titleView" destination="Inh-yR-TIt" id="Gpk-qZ-bTa"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="knZ-9v-Gwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48a-I6-ybL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795.6521739130435" y="722.54464285714278"/>
+            <point key="canvasLocation" x="187" y="765"/>
         </scene>
     </scenes>
     <resources>

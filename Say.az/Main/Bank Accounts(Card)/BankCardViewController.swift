@@ -50,7 +50,8 @@ class BankCardViewController: CustomNavigationBarVC, UITableViewDelegate, UITabl
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "bank.card.cell") as! BankCardCell
-        cell.cardView.titleLbl.text = Storage.bankCards[indexPath.row]
+        cell.cardView.titleLbl.text = "**** **** **** " + String(Storage.bankCards[indexPath.row].suffix(4))
+        cell.cardView.icon = Storage.bankCards[indexPath.row].prefix(1) == "m" ? #imageLiteral(resourceName: "mastercard") : #imageLiteral(resourceName: "visa")
         cell.deleteAction = {
             self.deleteCard(at: indexPath)
         }
